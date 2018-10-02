@@ -1,0 +1,83 @@
+﻿/* Page Setup */
+body
+{
+	font-family: Verdana, Arial, Helvetica;
+	background-color: rgb(255,255,204);
+	background-image:url('../images/paper.jpg');
+	color: rgb(102,102,51);
+	margin: 0;
+	padding: 0;
+}
+
+#masthead {
+	margin-left:auto;
+	margin-right:auto;
+	width:75%;
+}
+
+#container {
+	min-width: 600px;
+}
+
+#left_col {
+	width: 100px;
+	float: left;
+	font-size:small;
+}
+
+#page_content {
+	margin-left: 100px;
+	color:#663300;
+}
+
+#footer {
+	margin-left:auto;
+	margin-right:auto;
+	width:50%;
+	font-size:small;
+}
+
+/* Tag Setup */
+a:link
+{
+	color: rgb(0,0,255); 
+}
+a:visited
+{
+	color: rgb(51,102,204); 
+} 
+a:active 
+{
+	color: rgb(255,153,0);
+}
+
+h1
+{
+	font-family: Times New Roman, Times;
+	color: #003300;
+}
+h2
+{
+	font-family: Times New Roman, Times;
+	color: #006600; 
+}
+h3
+{
+	font-family: Times New Roman, Times;
+	color: #336600; 
+}
+h4
+{
+	font-family: Times New Roman, Times;
+	color: rgb(153,153,0);
+}
+h5
+{
+	font-family: Times New Roman, Times;
+	color: rgb(255,153,0);
+}
+h6
+{
+	font-family: Times New Roman, Times;
+	color: rgb(51,102,204);
+}

@@ -1,0 +1,496 @@
+﻿
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+	<title>Native American Genocide</title>
+	<META NAME="keywords" CONTENT="Wicocomico Indians,Native American Genocide">
+	<META NAME="description" CONTENT="Genocide of the Powhatan Indians, Means and methods of legalized murder">
+	
+</head>
+
+<body background="http://web.archive.org/web/20110718044600im_/http://www.wicocomico-indian-nation.com/images/paprjpg" bgcolor="black">
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+
+<script type="text/javascript" src="../pages/disclaim-element.js" ></script>
+<script type="text/javascript" src="../pages/graph-calc.js" ></script>
+<script type="text/javascript" src="../pages/jquery.min.js" ></script>
+<script type="text/javascript">
+//<![CDATA[
+var firstDate = 820454400000;
+var lastDate = 1356998399999;
+var wbPrefix = "http://web.archive.org/web/";
+var wbCurrentUrl = "http:\/\/www.wicocomico-indian-nation.com\/pages\/genocide.html";
+
+var curYear = -1;
+var curMonth = -1;
+var yearCount = 17;
+var firstYear = 1996;
+var imgWidth=425;
+var yearImgWidth = 25;
+var monthImgWidth = 2;
+var trackerVal = "none";
+var displayDay = "18";
+var displayMonth = "Jul";
+var displayYear = "2011";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+
+function showTrackers(val) {
+	if(val == trackerVal) {
+		return;
+	}
+	if(val == "inline") {
+		document.getElementById("displayYearEl").style.color = "#ec008c";
+		document.getElementById("displayMonthEl").style.color = "#ec008c";
+		document.getElementById("displayDayEl").style.color = "#ec008c";		
+	} else {
+		document.getElementById("displayYearEl").innerHTML = displayYear;
+		document.getElementById("displayYearEl").style.color = "#ff0";
+		document.getElementById("displayMonthEl").innerHTML = displayMonth;
+		document.getElementById("displayMonthEl").style.color = "#ff0";
+		document.getElementById("displayDayEl").innerHTML = displayDay;
+		document.getElementById("displayDayEl").style.color = "#ff0";
+	}
+   document.getElementById("wbMouseTrackYearImg").style.display = val;
+   document.getElementById("wbMouseTrackMonthImg").style.display = val;
+   trackerVal = val;
+}
+function getElementX2(obj) {
+	var thing = jQuery(obj);
+	if((thing == undefined) 
+			|| (typeof thing == "undefined") 
+			|| (typeof thing.offset == "undefined")) {
+		return getElementX(obj);
+	}
+	return Math.round(thing.offset().left);
+}
+function trackMouseMove(event,element) {
+
+   var eventX = getEventX(event);
+   var elementX = getElementX2(element);
+   var xOff = eventX - elementX;
+	if(xOff < 0) {
+		xOff = 0;
+	} else if(xOff > imgWidth) {
+		xOff = imgWidth;
+	}
+   var monthOff = xOff % yearImgWidth;
+
+   var year = Math.floor(xOff / yearImgWidth);
+	var yearStart = year * yearImgWidth;
+   var monthOfYear = Math.floor(monthOff / monthImgWidth);
+   if(monthOfYear > 11) {
+       monthOfYear = 11;
+   }
+   // 1 extra border pixel at the left edge of the year:
+   var month = (year * 12) + monthOfYear;
+   var day = 1;
+	if(monthOff % 2 == 1) {
+		day = 15;
+	}
+	var dateString = 
+		zeroPad(year + firstYear) + 
+		zeroPad(monthOfYear+1,2) +
+		zeroPad(day,2) + "000000";
+
+	var monthString = prettyMonths[monthOfYear];
+	document.getElementById("displayYearEl").innerHTML = year + 1996;
+	document.getElementById("displayMonthEl").innerHTML = monthString;
+	// looks too jarring when it changes..
+	//document.getElementById("displayDayEl").innerHTML = zeroPad(day,2);
+
+	var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+	document.getElementById('wm-graph-anchor').href = url;
+
+   //document.getElementById("wmtbURL").value="evX("+eventX+") elX("+elementX+") xO("+xOff+") y("+year+") m("+month+") monthOff("+monthOff+") DS("+dateString+") Moy("+monthOfYear+") ms("+monthString+")";
+   if(curYear != year) {
+       var yrOff = year * yearImgWidth;
+       document.getElementById("wbMouseTrackYearImg").style.left = yrOff + "px";
+       curYear = year;
+   }
+   if(curMonth != month) {
+       var mtOff = year + (month * monthImgWidth) + 1;
+       document.getElementById("wbMouseTrackMonthImg").style.left = mtOff + "px";
+       curMonth = month;
+   }
+}
+//]]>
+</script>
+
+<style type="text/css">body{margin-top:0!important;padding-top:0!important;min-width:800px!important;}#wm-ipp a:hover{text-decoration:underline!important;}</style>
+<div id="wm-ipp" style="display:none; position:relative;padding:0 5px;min-height:70px;min-width:800px; z-index:9000;">
+<div id="wm-ipp-inside" style="border-left: 5px solid #000; border-right: 5px solid #000; border-bottom: 5px solid #000; position:fixed; padding:0!important; margin:0!important; width:97%; min-width:780px; border-top:none;background-image:url('../pages/wm_tb_bk_trns.png'); text-align:center; -moz-box-shadow:1px 1px 3px #333; -webkit-box-shadow:1px 1px 3px #333; box-shadow:1px 1px 3px #333; font-size:11px!important; font-family:'Lucida Grande','Arial',sans-serif!important;">
+   <table style="border-collapse:collapse;margin:0;padding:0;width:100%;"><tbody><tr>
+   <td style="padding:10px;vertical-align:top;min-width:110px;">
+   <a href="http://wayback.archive.org/web/" title="Wayback Machine home page" style="background-color:transparent;border:none;">
+   <img src="../pages/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0"/></a>
+   </td>
+   <td style="padding:0!important;text-align:center;vertical-align:top;width:100%;">
+
+       <table style="border-collapse:collapse;margin:0 auto;padding:0;width:570px;"><tbody><tr>
+       <td style="padding:3px 0;" colspan="2">
+       <form target="_top" method="get" action="http://wayback.archive.org/web/form-submit.jsp" name="wmtb" id="wmtb" style="margin:0!important;padding:0!important;"><input type="text" name="url" id="wmtbURL" value="http://www.wicocomico-indian-nation.com/pages/genocide.html" style="width:400px;font-size:11px;font-family:'Lucida Grande','Arial',sans-serif;" onfocus="javascript:this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20110718044600" /><input type="submit" value="Go" style="font-size:11px;font-family:'Lucida Grande','Arial',sans-serif;margin-left:5px;" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td style="vertical-align:bottom;padding:5px 0 0 0!important;" rowspan="2">
+           <table style="border-collapse:collapse;width:110px;color:#99a;font-family:'Helvetica','Lucida Grande','Arial',sans-serif;"><tbody>
+			
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr style="width:110px;height:16px;font-size:10px!important;">
+           	<td style="padding-right:9px;font-size:11px!important;font-weight:bold;text-transform:uppercase;text-align:right;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+		                <a href="http://web.archive.org/web/20100925083925/http://www.wicocomico-indian-nation.com/pages/genocide.html" style="text-decoration:none;color:#33f;font-weight:bold;background-color:transparent;border:none;" title="25 Sep 2010"><strong>SEP</strong></a>
+		                
+               </td>
+               <td id="displayMonthEl" style="background:#000;color:#ff0;font-size:11px!important;font-weight:bold;text-transform:uppercase;width:34px;height:15px;padding-top:1px;text-align:center;" title="You are here: 4:46:00 Jul 18, 2011">JUL</td>
+				<td style="padding-left:9px;font-size:11px!important;font-weight:bold;text-transform:uppercase;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+                       Aug
+                       
+               </td>
+           </tr>
+
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr>
+               <td style="padding-right:9px;white-space:nowrap;overflow:visible;text-align:right!important;vertical-align:middle!important;" nowrap="nowrap">
+               
+		                <a href="http://web.archive.org/web/20100925083925/http://www.wicocomico-indian-nation.com/pages/genocide.html" title="8:39:25 Sep 25, 2010" style="background-color:transparent;border:none;">
+						<img src="../pages/wm_tb_prv_on.png" alt="Previous capture" width="14" height="16" border="0" /></a>
+		                
+               </td>
+               <td id="displayDayEl" style="background:#000;color:#ff0;width:34px;height:24px;padding:2px 0 0 0;text-align:center;font-size:24px;font-weight: bold;" title="You are here: 4:46:00 Jul 18, 2011">18</td>
+				<td style="padding-left:9px;white-space:nowrap;overflow:visible;text-align:left!important;vertical-align:middle!important;" nowrap="nowrap">
+               
+                       <img src="../pages/wm_tb_nxt_off.png" alt="Next capture" width="14" height="16" border="0"/>
+                       
+			    </td>
+           </tr>
+
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr style="width:110px;height:13px;font-size:9px!important;">
+				<td style="padding-right:9px;font-size:11px!important;font-weight: bold;text-align:right;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+		                <a href="http://web.archive.org/web/20100317144850/http://www.wicocomico-indian-nation.com/pages/genocide.html" style="text-decoration:none;color:#33f;font-weight:bold;background-color:transparent;border:none;" title="17 Mar 2010"><strong>2010</strong></a>
+		                
+               </td>
+               <td id="displayYearEl" style="background:#000;color:#ff0;font-size:11px!important;font-weight: bold;padding-top:1px;width:34px;height:13px;text-align:center;" title="You are here: 4:46:00 Jul 18, 2011">2011</td>
+				<td style="padding-left:9px;font-size:11px!important;font-weight: bold;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+                       2012
+                       
+				</td>
+           </tr>
+           </tbody></table>
+       </td>
+
+       </tr>
+       <tr>
+       <td style="vertical-align:middle;padding:0!important;">
+           <a href="http://wayback.archive.org/web/20110718044600*/http://www.wicocomico-indian-nation.com/pages/genocide.html" style="color:#33f;font-size:11px;font-weight:bold;background-color:transparent;border:none;" title="See a list of every capture for this URL"><strong>53 captures</strong></a>
+           <div style="margin:0!important;padding:0!important;color:#666;font-size:9px;padding-top:2px!important;white-space:nowrap;" title="Timespan for captures of this URL">15 Aug 01 - 18 Jul 11</div>
+       </td>
+       <td style="padding:0!important;">
+       <a style="position:relative; white-space:nowrap; width:425px;height:27px;" href="" id="wm-graph-anchor">
+       <div id="wm-ipp-sparkline" style="position:relative; white-space:nowrap; width:425px;height:27px;background-color:#fff;cursor:pointer;border-right:1px solid #ccc;" title="Explore captures for this URL">
+			<img id="sparklineImgId" style="position:absolute; z-index:9012; top:0px; left:0px;"
+				onmouseover="showTrackers('inline');" 
+				onmouseout="showTrackers('none');"
+				onmousemove="trackMouseMove(event,this)"
+				alt="sparklines"
+				width="425"
+				height="27"
+				border="0"
+				src="http://wayback.archive.org/jsp/graph.jsp?graphdata=425_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:000000000000_2000:-1:000000000000_2001:-1:000000010001_2002:-1:010000010101_2003:-1:010101010100_2004:-1:010101011100_2005:-1:100100002100_2006:-1:200111000110_2007:-1:110100131201_2008:-1:001020001101_2009:-1:000001000000_2010:-1:111000011000_2011:6:000000100000_2012:-1:000000000000"></img>
+			<img id="wbMouseTrackYearImg" 
+				style="display:none; position:absolute; z-index:9010;"
+				width="25" 
+				height="27"
+				border="0"
+				src="../pages/transp-yellow-pixel.png"></img>
+			<img id="wbMouseTrackMonthImg"
+				style="display:none; position:absolute; z-index:9011; " 
+				width="2"
+				height="27" 
+				border="0"
+				src="../pages/transp-red-pixel.png"></img>
+       </div>
+		</a>
+
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td style="text-align:right;padding:5px;width:65px;font-size:11px!important;">
+       <a href="javascript:;" onclick="document.getElementById('wm-ipp').style.display='none';" style="border-style: none; border-color: inherit; border-width: medium; display:block; padding-right:18px;background:url('../pages/wm_tb_close.png') no-repeat 100% 0; color:#33f; font-family:'Lucida Grande','Arial',sans-serif; margin-bottom:23px;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="border-style: none; border-color: inherit; border-width: medium; display:block; padding-right:18px;background:url('../pages/wm_tb_help.png') no-repeat 100% 0; color:#33f; font-family:'Lucida Grande','Arial',sans-serif;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+
+</div>
+</div>
+<script type="text/javascript">
+ var wmDisclaimBanner = document.getElementById("wm-ipp");
+ if(wmDisclaimBanner != null) {
+   disclaimElement(wmDisclaimBanner);
+ }
+</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+
+<table border="0"  cellspacing="0" cellpadding="0" width="650" align="center">
+<tr>
+<td>
+<font face="Arial, Helvetica, Times New Roman, Times" color="red">
+<div align="center">
+<h2>
+<p>
+<b>NATIVE AMERICAN <br>GENOCIDE</b>
+</h2>
+<hr align="center" width="350">
+</div>
+</font>
+</td>
+</tr>
+</table>
+<table border="0" cellspacing="0" cellpadding="0" width="650" align center">
+<tr>
+<td valign="top" width="10">&nbsp;</td>
+<td valign="top" width="100"></td>
+<td valign="top" width="10">&nbsp;</td>
+<td valign="top" width="10">&nbsp;</td>
+<td valign="top">
+<font face="Arial, Helvetica, Times New Roman, Times" color="red">
+<font size="3">
+<p>
+<b>TRAIL OF DEATH:</b>after years of researching the Wicocomico Nation, it has led me to 
+various other sources of study concerning the brutality  that Native Americans suffered
+at the hands of the English and later the United States.These stories will not be found
+in our history books and if by some chance one is found in the history books, it will be 
+written so that it would be difficult to realize it was the same story. Our children were
+brought up on the story of Pocohantas and how understanding the English were.
+</p>
+<p>
+When stories of this nature are read, many people try to make excuses for the brutality
+that was imposed on the Native Americans. Many readers will mention the atrocities the 
+Native Americans imposed on the English and citizens of the United States.KEEP IN MIND 
+THIS LAND BELONGED TO THE NATIVE AMERICANS; they reacted just as any citizen would in
+defense of their land and family.
+</p>
+<p>
+When Indians came in contact with the Europeans ( Spanish,French,English) it was a 
+disaster for the Indians in the form of out right slaughter, or through diseases 
+which the Indians were not immune to. I believe that is sufficient enough to make the 
+Indians wary of the Europeans.
+</p>
+<p>
+When the English arrived to settle Jamestown, Chief Powhatan fed and kept the English
+alive, however after a short time it was evident the intent of the English was to 
+steal the land in any manner possible.
+</p>
+<p>
+<b>MILITARY CAMPAIGN AGAINST POWHATAN</b>
+</p>
+<p>
+During the summer of 1610 in Jamestown, the Governor, Thomas West De la Warr had 
+directed Powhatan to return several runaway Englishman. It appears  Powhatan did
+not respond in a satisfactory manner. De la Warr felt this was sufficient reason to
+conduct a military campaign against Powhatan. George Percy, brother to the Earl of
+Northumberland and De la Warr's second in command headed up the military action against 
+Powhatan. The following is Percy's description of the actions that took place;
+</p>
+<p>
+Drawing my soldiers into battle, placing a Captain or Lieutenant at every file,
+we marched towards the Indian Town...and then we fell upon them, put some fifteen or
+sixteen to the sword and almost the rest to flight...My Lieutenant brought with him 
+the Queen and her children and one Indian prisoner for which I taxed him because he
+had spared them. His answer was that having them now in custody I might do with them 
+what I pleased. Upon the same I caused the Indians head to be cut off, then disperesed 
+my files, appointing my soldiers to burn their houses and to cut down their corn growing
+about the town. With the Indians dead or disperesed, their village destroyed, and their
+food supplies laid to waste, Percy sent out another raiding party to the the same to 
+another Indian Town and then marched to his boats with the Queen and her children in tow.
+There, however his soldiers "did begin to murmur because the Queen and her children were
+spared." This seemed a reasonable complaint to Percy, so he called a council together and
+"it was agreed upon to putt the children to death <b>THE WHICH WAS EFFECTED BY THROWING
+THEM OVERBOARD, SHOOTING OUT THEIR BRAINS IN THE WATER."</b> Upon his return to Jamestown, 
+however, Percy was informed that Governor De la Warr was unhappy with him because he had not 
+yet killed the Queen. Advised by his chief Lieutenant that it would be best to burn her 
+alive, Perry instead decided to end his day of "so much bloodshed" with a final act of
+mercy:instead of burning her, he had the queen quickly killed by stabbing her to death.
+</p>
+<p>
+<b>JAMESTOWN LEGISLATION AGAINST THE INDIANS</b>
+</p>
+<p>
+In 1623, the Jamestown Colonists passed legislation that indicated their hostility
+toward the Indians. The following acts are those that deal with the Indians.<br>
+&nbsp;&nbsp;&nbsp;Act 23: " that every dwelling house shall be pallizaded in for
+defence against the Indians.<br>
+&nbsp;&nbsp;&nbsp;Act 24: "that no man go or send abroad without a sufficient party 
+well armed.<br>
+&nbsp;&nbsp;&nbsp;Act 25: "that men go not towork in the ground with out their arms
+(and a centenell upon them).<br>
+&nbsp;&nbsp;&nbsp;Act 26: "that the inhabitants go not aboard ships or upon any other
+occasions in such numbers, as thereby to weaken and endanger the plantations.<br>
+&nbsp;&nbsp;&nbsp;Act 27: "that the commander of every plantation take care that
+there be sufficient powder and ammunition within the plantation under his command
+and their pieces fixt and their arms complete.<br>
+&nbsp;&nbsp;&nbsp;Act 29: "that no commander of any plantation do either him-selfe
+or suffer others to spend powder unnecessarily in drinking or entertainments.<br>
+&nbsp;&nbsp;&nbsp;Act 32:<b>"that at the beginning of July next the inhabitants of
+every corporation shall fall upon their adjoining savages, as we did last year,
+those that shall be hurt upon services, to be cured at the public charge; in case
+any to be lamed to  be maintained by the country according to his person and quality.</b>
+</p>
+<p>
+Finally in 1655 the legislatures first act for that session was to pass an Act in the 
+Indians favor. The Assembly admitted they were harsh on the Indians and they had 
+attacked the white man to protect their land and way of life. The first Act: for every
+eight wolves heads the Indian brought in, the Great Man would receive a cow. The second
+Act: if the Indian families would bring in their children to live with a white family,
+the children would be educated and civilized and not be used as slaves. The third Act:
+it addressed the Indians land in that he could not bargin away his land to an Englishman 
+without the permission of the Assembly, and his land was protected from unfair seizure.
+</p>
+<p>
+Based on the treatment the English inflicted on the Powhatans when they arrived in 1608,the 
+colonists, after the Revolutionary War continued the same methods that had served the 
+English so well as indicated in the following stories as the United States moved west.
+</p>
+<p>
+<b>SAND CREEK MASSACRE (SE COLORADO)</b>.
+</p>
+<p>
+In 1864 Col Chivington ( a former clergyman that had political ambitions) was
+appointed the territorial military commander in Colorado. After some isolated 
+incidents with the Indians, Chivington sent out detachments to burn and destroy 
+Indian villages, the Cheyenne, Arapahos, Sioux, Kiowa's, and Comanches's struck
+back. this give Chivington the opportunity that he was looking for, to launch a full
+scale attack on the Indians.
+</p>
+<p>
+On November 29, 1864, Chivington deployed his command, about seven hundred solders
+with howitzers around Black Kettle's village on Sand Creek. Black Kettle was under
+the impression that he was at peace with the Americans; he ran up the American Flag 
+and assured his people that all was well. the troops opened fire and charged. The
+Indians scattered in all directions. Chivington had made it clear that he wanted no 
+prisoners, hie policy was "to kill and scalp all, little and big". Nits make lice
+he was fond of saying. Interpreter John Smith later testified: they were scalped, 
+their brains knocked out; the men used their knives, ripped open women, clubbed 
+little children, knocked them in the head with their guns, beat their brains out,
+mutilated their bodies in every sense of the word. Two hundred Cheyenne's, two
+thirds of them women and children perished. Nine chiefs died, however Chief Black
+Kettle escaped.( Only to  be murdered later by Custer.)
+</p>
+<p>
+<b>WOUNDED KNEE</b>
+</p>
+<p>
+About a week prior to the slaughter at Wounded Knee, <b>L.Frank Baum,</b> editor of
+South Dakota's Aberdeen Saturday Pioneer newspaper advocated the extermination
+of all America's Indians. <b>Quote;</b> The nobility of the Redskin is extinquished
+and what few are left are a pack of whining curs who lick the hand that smites them.
+The whites by law of conquest, by justice of civilization, are masters of the American 
+continent, and the best safety of the frontier settlements will be secured by the total 
+annihilation of the few remaining Indians.(<b>WHY NOT ANNIHILATION?)</b>Their  glory has
+fled, their spirit broken, their manhood effaced, better they should die than live
+the miserable wretches that they are. Unquote.<b>L. FRANK BAUM LATER BECOMES FAMOUS AS
+THE AUTHOR OF: </b>  
+</p>
+<p><b><h2>"THE WIZARD OF OZ."
+</h2>
+</b>
+</p>
+<p>
+An Indian named American Horse, who had been friendly to the American troops for years
+gave this narrative of the slaughter at Wounded Knee; "they turned their guns, Hotchkiss
+guns upon the women who were in  the lodges standing there under a flag of truce, and of
+course as soon as they were fired upon they fled...There was a women with an infant in her 
+arms who was killed as she almost touched the flag of truce, and the women and children
+of course were strewn all along the circular village untill they were dispatched. Right
+near the flag of truce a mother was shot down with her infant; the child not knowing that
+it's mother was dead was still nursing, and that especially was a very sad sight.The women
+as they were fleeing with their babies were killed together, shot right through, and the
+women who were heavy with child were also killed...After most of them had been killed a 
+cry was made that all those who were not killed or wounded should come forth and they would
+be safe. Little boys who were not wounded came out of their places of refuge, and as
+soon as they came in sight,<b> a number of soldiers surrounded them and butchered them there...
+</b>Of course it would have been alright if only the men were killed; we would feel almost 
+grateful for it. But the fact of the killing of the women and more especially of the
+of the young boys and girls who are to go to make up the future of the Indian people,
+is the saddest part of the whole affair and we feel it very sorely." Unquote"
+</p>
+<p>
+Shortly after the massacre, Baum stated his approval, in the "Aberdeen Saturday Pioneer's
+paper stating that; we had better, in order to protect our civilization, follow it up
+and wipe these untamed and untameable creatures from the face of the earth.
+</p>
+<p>
+NEW ENGLAND COLONY
+<p>
+On May 26th 1635 in Connecticut, Captain John Mason with his Massachusetts-Connecticut
+force of ninty men and eighty Mohegans and 500 Narragansett Indians planned to attack
+the Pequot with the intent to completly wipe the town out.  Mason and his militia 
+struck in the predawn. Mason instructed his men to not take any prisoners.
+When the Mohegans and Narragansett  found out about the no prisoner order they refused to
+participate and left.
+Thus left to his own devices, Mason ordered his miltiamen to set fire
+to the entire town, burning alive as many as 900 "women, children, and 
+helpless old men. Those who tried to escape the blaze were cut down with 
+swords and axes. As Plymouth Governor William Bradford later described the 
+scene, paraphrasing Mason's own exultant account: <br><h4> "It was  a fearful sight to see 
+them thus frying  in the fire and the streams of blood quenching the same, and 
+horrible was the stink and scent thereof; but the victory seemed a sweet
+sacriface, and they gave  the praise thereof to God, who had wrought
+so wonderfully  for them, thus to enclose their enemies in their hands and
+give them so  speedy  a victory over so pround and insulting an enemy.
+</h4>
+</p>
+<p>
+The new England Colony made the Virginia Colonists look like a group of
+saints. Indians normally fought out of revenge, to steal women or slaves,
+but very seldom slaughtered women and children and old men for land. 
+</p>
+
+
+
+
+
+What has been disclosed on this site is only the tip of the iceberg, broken treaties 
+and promises are part of the Native Americans everyday vocabulary.
+</p>
+<p>
+I'm sure some folks that read this page will feel uncomfortable, however that was not
+the intent. If we forget the past, it will make a circle and repeat it's self. It's 
+also important for people to know the truth not only one side, but both. I believe 
+a reader will now understand why the Native American feels strongly about their
+reservations and treaties with the government. In some parts of the country 
+the Native American did not have voting privilages as late as the 1960s, so for them
+the past is not in the 1800s, but just a few short years ago.
+</p>
+<p>
+The Native American is not looking for sympathy, but justice; if any one wants to keep
+informed of Native American problems, you can go on the internet www.indiancountry.com
+it's a well written paper. Also any comments  or questions may be addressed to 
+eagleman@theriver.com
+</p>
+<p>
+References: Stannard, David E. "American Holocaust" 1992 Oxford University Press Inc.
+<p align="center">
+<a href="../index_old.html">[Home]</a>
+<p align="center">
+<a href="../pages/editorial.html">[Editorial]</a>
+</p>
+
+</body>
+</html>
+
+
+
+
+
+<!--
+     FILE ARCHIVED ON 4:46:00 Jul 18, 2011 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 17:08:18 Feb 19, 2012.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->

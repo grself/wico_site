@@ -1,0 +1,510 @@
+﻿
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+	<title> Research</title>
+</head>
+
+<body background="http://web.archive.org/web/20110718044626im_/http://www.wicocomico-indian-nation.com/images/papr.jpg" bgcolor="tan">
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+
+<script type="text/javascript" src="../pages/disclaim-element.js" ></script>
+<script type="text/javascript" src="../pages/graph-calc.js" ></script>
+<script type="text/javascript" src="../pages/jquery.min.js" ></script>
+<script type="text/javascript">
+//<![CDATA[
+var firstDate = 820454400000;
+var lastDate = 1356998399999;
+var wbPrefix = "http://web.archive.org/web/";
+var wbCurrentUrl = "http:\/\/www.wicocomico-indian-nation.com\/pages\/research.html";
+
+var curYear = -1;
+var curMonth = -1;
+var yearCount = 18;
+var firstYear = 1996;
+var imgWidth=450;
+var yearImgWidth = 25;
+var monthImgWidth = 2;
+var trackerVal = "none";
+var displayDay = "18";
+var displayMonth = "Jul";
+var displayYear = "2011";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+
+function showTrackers(val) {
+	if(val == trackerVal) {
+		return;
+	}
+	if(val == "inline") {
+		document.getElementById("displayYearEl").style.color = "#ec008c";
+		document.getElementById("displayMonthEl").style.color = "#ec008c";
+		document.getElementById("displayDayEl").style.color = "#ec008c";		
+	} else {
+		document.getElementById("displayYearEl").innerHTML = displayYear;
+		document.getElementById("displayYearEl").style.color = "#ff0";
+		document.getElementById("displayMonthEl").innerHTML = displayMonth;
+		document.getElementById("displayMonthEl").style.color = "#ff0";
+		document.getElementById("displayDayEl").innerHTML = displayDay;
+		document.getElementById("displayDayEl").style.color = "#ff0";
+	}
+   document.getElementById("wbMouseTrackYearImg").style.display = val;
+   document.getElementById("wbMouseTrackMonthImg").style.display = val;
+   trackerVal = val;
+}
+function getElementX2(obj) {
+	var thing = jQuery(obj);
+	if((thing == undefined) 
+			|| (typeof thing == "undefined") 
+			|| (typeof thing.offset == "undefined")) {
+		return getElementX(obj);
+	}
+	return Math.round(thing.offset().left);
+}
+function trackMouseMove(event,element) {
+
+   var eventX = getEventX(event);
+   var elementX = getElementX2(element);
+   var xOff = eventX - elementX;
+	if(xOff < 0) {
+		xOff = 0;
+	} else if(xOff > imgWidth) {
+		xOff = imgWidth;
+	}
+   var monthOff = xOff % yearImgWidth;
+
+   var year = Math.floor(xOff / yearImgWidth);
+	var yearStart = year * yearImgWidth;
+   var monthOfYear = Math.floor(monthOff / monthImgWidth);
+   if(monthOfYear > 11) {
+       monthOfYear = 11;
+   }
+   // 1 extra border pixel at the left edge of the year:
+   var month = (year * 12) + monthOfYear;
+   var day = 1;
+	if(monthOff % 2 == 1) {
+		day = 15;
+	}
+	var dateString = 
+		zeroPad(year + firstYear) + 
+		zeroPad(monthOfYear+1,2) +
+		zeroPad(day,2) + "000000";
+
+	var monthString = prettyMonths[monthOfYear];
+	document.getElementById("displayYearEl").innerHTML = year + 1996;
+	document.getElementById("displayMonthEl").innerHTML = monthString;
+	// looks too jarring when it changes..
+	//document.getElementById("displayDayEl").innerHTML = zeroPad(day,2);
+
+	var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+	document.getElementById('wm-graph-anchor').href = url;
+
+   //document.getElementById("wmtbURL").value="evX("+eventX+") elX("+elementX+") xO("+xOff+") y("+year+") m("+month+") monthOff("+monthOff+") DS("+dateString+") Moy("+monthOfYear+") ms("+monthString+")";
+   if(curYear != year) {
+       var yrOff = year * yearImgWidth;
+       document.getElementById("wbMouseTrackYearImg").style.left = yrOff + "px";
+       curYear = year;
+   }
+   if(curMonth != month) {
+       var mtOff = year + (month * monthImgWidth) + 1;
+       document.getElementById("wbMouseTrackMonthImg").style.left = mtOff + "px";
+       curMonth = month;
+   }
+}
+//]]>
+</script>
+
+<style type="text/css">body{margin-top:0!important;padding-top:0!important;min-width:800px!important;}#wm-ipp a:hover{text-decoration:underline!important;}</style>
+<div id="wm-ipp" style="display:none; position:relative;padding:0 5px;min-height:70px;min-width:800px; z-index:9000;">
+<div id="wm-ipp-inside" style="border-left: 5px solid #000; border-right: 5px solid #000; border-bottom: 5px solid #000; position:fixed; padding:0!important; margin:0!important; width:97%; min-width:780px; border-top:none;background-image:url('../pages/wm_tb_bk_trns.png'); text-align:center; -moz-box-shadow:1px 1px 3px #333; -webkit-box-shadow:1px 1px 3px #333; box-shadow:1px 1px 3px #333; font-size:11px!important; font-family:'Lucida Grande','Arial',sans-serif!important;">
+   <table style="border-collapse:collapse;margin:0;padding:0;width:100%;"><tbody><tr>
+   <td style="padding:10px;vertical-align:top;min-width:110px;">
+   <a href="http://wayback.archive.org/web/" title="Wayback Machine home page" style="background-color:transparent;border:none;">
+   <img src="../pages/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0"/></a>
+   </td>
+   <td style="padding:0!important;text-align:center;vertical-align:top;width:100%;">
+
+       <table style="border-collapse:collapse;margin:0 auto;padding:0;width:570px;"><tbody><tr>
+       <td style="padding:3px 0;" colspan="2">
+       <form target="_top" method="get" action="http://wayback.archive.org/web/form-submit.jsp" name="wmtb" id="wmtb" style="margin:0!important;padding:0!important;"><input type="text" name="url" id="wmtbURL" value="http://www.wicocomico-indian-nation.com/pages/research.html" style="width:400px;font-size:11px;font-family:'Lucida Grande','Arial',sans-serif;" onfocus="javascript:this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20110718044626" /><input type="submit" value="Go" style="font-size:11px;font-family:'Lucida Grande','Arial',sans-serif;margin-left:5px;" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td style="vertical-align:bottom;padding:5px 0 0 0!important;" rowspan="2">
+           <table style="border-collapse:collapse;width:110px;color:#99a;font-family:'Helvetica','Lucida Grande','Arial',sans-serif;"><tbody>
+			
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr style="width:110px;height:16px;font-size:10px!important;">
+           	<td style="padding-right:9px;font-size:11px!important;font-weight:bold;text-transform:uppercase;text-align:right;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+		                <a href="http://web.archive.org/web/20101224155354/http://wicocomico-indian-nation.com/pages/research.html" style="text-decoration:none;color:#33f;font-weight:bold;background-color:transparent;border:none;" title="24 Dec 2010"><strong>DEC</strong></a>
+		                
+               </td>
+               <td id="displayMonthEl" style="background:#000;color:#ff0;font-size:11px!important;font-weight:bold;text-transform:uppercase;width:34px;height:15px;padding-top:1px;text-align:center;" title="You are here: 4:46:26 Jul 18, 2011">JUL</td>
+				<td style="padding-left:9px;font-size:11px!important;font-weight:bold;text-transform:uppercase;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+                       Aug
+                       
+               </td>
+           </tr>
+
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr>
+               <td style="padding-right:9px;white-space:nowrap;overflow:visible;text-align:right!important;vertical-align:middle!important;" nowrap="nowrap">
+               
+		                <a href="http://web.archive.org/web/20101224155354/http://wicocomico-indian-nation.com/pages/research.html" title="15:53:54 Dec 24, 2010" style="background-color:transparent;border:none;">
+						<img src="../pages/wm_tb_prv_on.png" alt="Previous capture" width="14" height="16" border="0" /></a>
+		                
+               </td>
+               <td id="displayDayEl" style="background:#000;color:#ff0;width:34px;height:24px;padding:2px 0 0 0;text-align:center;font-size:24px;font-weight: bold;" title="You are here: 4:46:26 Jul 18, 2011">18</td>
+				<td style="padding-left:9px;white-space:nowrap;overflow:visible;text-align:left!important;vertical-align:middle!important;" nowrap="nowrap">
+               
+                       <img src="../pages/wm_tb_nxt_off.png" alt="Next capture" width="14" height="16" border="0"/>
+                       
+			    </td>
+           </tr>
+
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr style="width:110px;height:13px;font-size:9px!important;">
+				<td style="padding-right:9px;font-size:11px!important;font-weight: bold;text-align:right;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+		                <a href="http://web.archive.org/web/20081029234554/http://www.wicocomico-indian-nation.com/pages/research.html" style="text-decoration:none;color:#33f;font-weight:bold;background-color:transparent;border:none;" title="29 Oct 2008"><strong>2008</strong></a>
+		                
+               </td>
+               <td id="displayYearEl" style="background:#000;color:#ff0;font-size:11px!important;font-weight: bold;padding-top:1px;width:34px;height:13px;text-align:center;" title="You are here: 4:46:26 Jul 18, 2011">2011</td>
+				<td style="padding-left:9px;font-size:11px!important;font-weight: bold;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+                       2012
+                       
+				</td>
+           </tr>
+           </tbody></table>
+       </td>
+
+       </tr>
+       <tr>
+       <td style="vertical-align:middle;padding:0!important;">
+           <a href="http://wayback.archive.org/web/20110718044626*/http://www.wicocomico-indian-nation.com/pages/research.html" style="color:#33f;font-size:11px;font-weight:bold;background-color:transparent;border:none;" title="See a list of every capture for this URL"><strong>20 captures</strong></a>
+           <div style="margin:0!important;padding:0!important;color:#666;font-size:9px;padding-top:2px!important;white-space:nowrap;" title="Timespan for captures of this URL">4 Dec 02 - 18 Jul 11</div>
+       </td>
+       <td style="padding:0!important;">
+       <a style="position:relative; white-space:nowrap; width:450px;height:27px;" href="" id="wm-graph-anchor">
+       <div id="wm-ipp-sparkline" style="position:relative; white-space:nowrap; width:450px;height:27px;background-color:#fff;cursor:pointer;border-right:1px solid #ccc;" title="Explore captures for this URL">
+			<img id="sparklineImgId" style="position:absolute; z-index:9012; top:0px; left:0px;"
+				onmouseover="showTrackers('inline');" 
+				onmouseout="showTrackers('none');"
+				onmousemove="trackMouseMove(event,this)"
+				alt="sparklines"
+				width="450"
+				height="27"
+				border="0"
+				src="http://wayback.archive.org/jsp/graph.jsp?graphdata=450_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:000000000000_2000:-1:000000000000_2001:-1:000000000000_2002:-1:000000000001_2003:-1:000001100000_2004:-1:101000110100_2005:-1:110000000000_2006:-1:000010000010_2007:-1:001000010001_2008:-1:000010000100_2009:-1:000000000000_2010:-1:000000000002_2011:6:000000100000_2012:-1:000000000000"></img>
+			<img id="wbMouseTrackYearImg" 
+				style="display:none; position:absolute; z-index:9010;"
+				width="25" 
+				height="27"
+				border="0"
+				src="../pages/transp-yellow-pixel.png"></img>
+			<img id="wbMouseTrackMonthImg"
+				style="display:none; position:absolute; z-index:9011; " 
+				width="2"
+				height="27" 
+				border="0"
+				src="../pages/transp-red-pixel.png"></img>
+       </div>
+		</a>
+
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td style="text-align:right;padding:5px;width:65px;font-size:11px!important;">
+       <a href="javascript:;" onclick="document.getElementById('wm-ipp').style.display='none';" style="border-style: none; border-color: inherit; border-width: medium; display:block; padding-right:18px;background:url('../pages/wm_tb_close.png') no-repeat 100% 0; color:#33f; font-family:'Lucida Grande','Arial',sans-serif; margin-bottom:23px;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="border-style: none; border-color: inherit; border-width: medium; display:block; padding-right:18px;background:url('../pages/wm_tb_help.png') no-repeat 100% 0; color:#33f; font-family:'Lucida Grande','Arial',sans-serif;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+
+</div>
+</div>
+<script type="text/javascript">
+ var wmDisclaimBanner = document.getElementById("wm-ipp");
+ if(wmDisclaimBanner != null) {
+   disclaimElement(wmDisclaimBanner);
+ }
+</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+
+<table border="0" cellspacing="0" cellpadding="0" width="650" align="center">
+<tr>
+<td>
+<font face="Arial, Helvetica, Times New Roman, Times" color="#993300">
+<div align="center">
+<font size="5">
+<b>WICOCOMICO INDIAN NATION<br> </font size>
+<p>
+<font size="3">
+ "RESEARCH AND STUDY SITE"
+ <hr align="center" width="350">
+ </div>
+ </font>
+ </td>
+ </tr>
+ </table>
+ <p align="center">
+ <font color="#993300">
+ <font size="3">
+ <b>UNDER CONSTRUCTION, PLEASE VISIT OFTEN
+ </p>
+ 
+ 
+<b> The purpose of our reseach site is to put forth new ideas, theories, speculation
+ and articles that in some way may reflect or connect to the Wicocomico Indian 
+ Nation and the Powhatan Empire. At no time will we attempt to analyze the Indians
+ mind 400 hundred years later, we will deal in facts that may lead to an itelligent
+ conclusion or theory. The problem today is that many historians try to reconstruct
+ the Indian's mind set based on the training they received in todays world, this is not 
+ the way to build a solid base of past history. The prehistoric Indian's mind set,and 
+ world view can not possibly be reconstructed  by  contemporary white people with 
+ their mind set and world view. 
+ </p>
+ <p>
+ What is amazing is that more historians do not research contemporary Native American
+ Tribes literature, religion, folk lore, and oral history to make rational conclusions
+ concerning the past. In almost all available information on contemporary Native Americans,
+ they all have many things in common, their close relationship to Mother Earth, fire, water
+ wind, the four directions, the circle, and other symbols of their past. This is their 
+ culture that has  been passed down from their ancestors. Many of these symbols 
+ are discussed in the history written by the Europeans 400-500 years ago, a clear 
+ indication that, our contempoary Native American Indians continue to have a different
+ world view than the white race, a strong desire to keep and maintain their heritage.
+ </p>
+ <p>
+ The articles that we place on our site  are in no way implying that the subject
+ matter is part  of our  history or connected to the Wicocomico Indian Nation 
+ in any way, but simply stated, an area of research that runs parallel with our 
+ research and subject matter may have covered  areas that we  previously researched.
+ </p>
+ <p>
+ The following article is submitted by Wayne Winkler, a well known resercher in
+ the origins of the "Melungeons" a group of people that are older than America.
+ Some of his  research and therories include the role and connections the Powhatan's
+ have in Melungeon history.
+ </i>
+ </p>
+ <hr align="center" width="450">
+ <p align="center">MULUNGEON ORIGINS<br></p>
+ <p align="center">By Wayne Winkler</p>
+ 
+ 
+ For more than a century, the Melungeons have been the focus of anthropologists,
+ social scientists, and (especially) feature writers for newspapers and magazines.
+ The most common adjective used to describe the Melungeons is "mysterious;" no one
+ seems to know where the Melungeons orginated. More significantly, the Melungeions 
+ did not fit into any of the racial categories which define an individual or group
+ within American society, they were considered by their neighbors neither white,black,
+ nor Indian.
+ </p>
+ <p>
+ The Melungeons are a group of mixed ethnic ancestry, found primarily in northeastern
+ Tennessee, southwestern Virginia, southeastern Kentucky. Similiar groups of "mysterious"
+ people, or at least remnants of these groups, are found all along the Atlantic seaboard.
+ While these other groups have no known connection to the Melungeons, they have suffered
+ similar problems due to the difficulty of placing them within an established racial
+ category. Anthropologists called them "racial islands" or "tri-racial isolates."
+ </p>
+ <p>
+ Several surnames are associated with the Melungeons, including Collins, Gibson, Goins,
+ Mullins, Bowlin. The Melungeons have historically been associated with Newmans Ridge in
+ Hancock County, Tennessee. Newspapers and magazines have found the Melungeons a 
+ fascinating topic since the 1840s, but the Melungeons have resented most of the 
+ publicity they have received over the years. Most of the articles on the Melungeons
+ speculated on the legends, folklore, and other theories surrounding their ancestry.
+ </p>
+ <p>
+ Some of these legends and theories have suggested descent from Spanish or Portuguese
+ explorers, from the "Lost Colonists" of Roanoke Island, from the shipwrecked sailors 
+ or pirates of various nationalities, from one of the Lost Tribes of Israel, or from 
+ ancient Phoenicians or Carthaginians. More recent theories have proposed that the
+ Melungeons descended from Mediterranean or Middle Eastern ancestors.
+ </p>
+ <p>
+ None of these theories originated with the Melungeons themselves. Early accounts 
+ reflect the Melungeons' self description as "Indians." Some Melungeons reportedly
+ described themselves a Portuguese," or,  as many pronounced it, Portyghee."Most
+ of their white neighbors considered the Melungeons a mixture of black and Indian
+ or white, black, and Indian.
+ </p>
+ <p>
+ There is no consistent definition of the word "Melungeon." Some anthropologists
+ have limited the term to a few families located near Newman's Ridge, while others
+ have expanded "Melungeon" to include other mixed-race groups in the southeastern
+ United States. At one time, the word was used as a racial epithet against a 
+ mullatto, at another time as a political epithet for east Tennessee Republicans.
+ The common usage of the term had an element of socio-economic status attached to it;
+ families who were financially successful were not necessarily considered Melungeon,
+ no matter  who their ancestors were.
+ </p>
+ <p>
+ By the early 1960s, newspaper articles predicted the disappearance of the Melungeons;
+ out-migration and intermarriage with whites had nearly rendered the  Melungeons
+ indistinguishable from their white neighbors. However, by the end of that decade, 
+ Melungeons in Hancock County were acknowledging and celebrating their heritage
+ with an outdoor drama. By the mid-1900s, a "virtual community" of Melungeons had
+ developed on the internet.
+ </p>
+ <p>
+ One question which has been examined by nearly every writer on this subject is 
+ the origin of the name"Melungeon" The most commonly accepted theory is that
+ the word derived fromthe French <i>melange,</i> meaning mixture. A French colony
+ in southwestern Viginia in the late 1700s may have dubbed these people with the 
+ plural form of <i> melange</i>, which is <i> melangeon</i> or <i>melangeons,</i>
+ which could conceivably have been corrupted to "Melungeon." Another proposed theory
+ for the origin of "Melungeon" is the Afro-Portuguese term meaning <i> melungo,</i>
+ supposedly meaning shipmate." Yet another is the Greek term <i> melan,</i> meaning
+ "black."
+ </p>
+ <p>
+ Author Brent Kennedy, in arguing a Trukish origin for the Melungeons, maintains that
+ "Melungeons" derives from the Arabic <i>melun jinn</i>and the Turkish<i>melun can,</i>
+ both pronounced similarly to " Melungeon" and both translated to "cursed soul" "or one
+ who has been abandoned by God."Kennedy maintains that the Melungeons identified themselves
+ by that name.
+ </p>
+ <p>
+ Historian C.S.Everett suggests another possible origin for the term:<i>melongena,</i>
+ originally an Italian term related to the more modern <i>melanzane</i>(pronounced meh
+ lun zhen eh) which means "eggplant." The eggplant has a dark skin,and the term was 
+ used to describe sub-Saharan Africans.
+ </p>
+ <p>
+ Karlton Douglas and Joanne Pexxullo suggests that the word "Melungeon" originated as
+ the old English term "malengin"(singular) or "malengine"(plural). An old copy of Webster's
+ Dictionary defines "malengine" as "Evil machination; guile;deceit. Douglas and Pessullo
+ write, "It is well known the people of Appalachia, and Melungeons in particular, used
+ words that were becoming archaic, and not much in use beyond Appalachia."
+ </p>
+ <p>
+ Nearly everyone that has written about the Melungeons agrees that they fiercely resented
+ the name. Even in mid-20th century, to call a Hancock Countian a Melungeon was to 
+ insult him. The stigma attached to the name "Melungeon" leads most researchers to the 
+ conclusion that the name was imposed upon the people, that it was not a name they 
+ ever used for themselves.
+ </p>
+ <p>
+ Most Melungeons in Hancock County lool very much like their "white" neighbors, many 
+ of whom are quite swarthy from a lifetime of outdoor work. In 1963, Brewton Berry
+ wrote,"[N]either in their culture nor their economy are they distinguishable from other
+ mountain folk. Among those bearing the telltale surnames are individuals of dark
+ complexion and straight black hair...But the physical features of most of them suggest
+ no other ancestry than white."
+ 	Some historic descriptions of Melungeons include:	
+</p>
+<p>
+<font size="2">
+They are tall, straight, well-formed people, of a dark
+copper color...but wolly heads and other similar appendages of our negro.
+</p>
+<p>
+They are swarthy complexion, with prominent cheek bones, jet black hair, generally 
+straight but at times having a slight tendancy to curl, and the men have heavy black
+beards...Their frames are well built and some of the men are fine specimens of 
+physical manhood. They are seldom fat.
+</p>
+<p>
+While some of them are swarthy and have high Indian cheekbones, the mountain whites,
+too, often display these same characteristics. Also, many of the Melungeons have 
+light hair, blue eyes, and fair skin.
+</p>
+<p>
+The color of the skin of a full-blooded, pure Melungeon is a much richer  brown
+than an Indian's skin. It is not the color of a part Indian and part white, for 
+their skin is lighter. The full-blooded, pure Melungeon had more the color of a
+skin of a person from India and Egypt.
+</font size="2">
+</p>
+<p>
+<font size="4">
+In 1946, William Gilbert presented the first comprehensive survey of tri-racial groups
+in the U.S. He estimated that there were at least 50,000 person who were "complex mixtures
+in varying degrees of white, Indian, and Negro blood."
+</p>
+<p>
+Gilbert listed ten major tri-racial groups with several related groups. These included:
+</p>
+<p>
+&nbsp&nbsp&nbsp&nbsp&nbsp 1.<b>BRASS ANKLES</b> and allied groups in South Carolina, 
+including Red Bones, Red Legs, Turks, Marlboro Blues and others.
+</p>
+<p>
+&nbsp&nbsp&nbsp&nbsp&nbsp 2.<b> CAJANS and CREOLES</b> of Alabama and Mississippi.
+</p>
+<p>
+&nbsp&nbsp&nbsp&nbsp&nbsp 3.<b> CROATANS </b>of North Carolina, South Carolina, and Virginia.
+</p>
+<p>
+&nbsp&nbsp&nbsp&nbsp&nbsp 4.<b> GUINEAS</b> of West Virginia and Maryland.
+</p>
+<p>
+&nbsp&nbsp&nbsp&nbsp&nbsp 5.<b> ISSUES</b> of Amherst and Rockingham Counties, Virginia.
+</p>
+<p>
+&nbsp&nbsp&nbsp&nbsp&nbsp 6.<b> JACKSON WHITES  of New York and new Jersey.
+</p>
+<p>
+&nbsp&nbsp&nbsp&nbsp&nbsp 7.<b> MELUNGEONS  the Southern Appalachians.
+</p>
+<p>
+&nbsp&nbsp&nbsp&nbsp&nbsp 8.<b> MOORS and NANTICOKES of Delaware and New Jersey.
+</p>
+<p>
+&nbsp&nbsp&nbsp&nbsp&nbsp 9.<b> RED BONES of Louisiana.
+</p>
+<p>
+&nbsp&nbsp&nbsp&nbsp&nbsp 10.<b> WESORTS of southern Maryland.
+
+
+
+	
+	
+	
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <b>
+ </p>
+ <p align="center">
+ MORE TO FOLLOW.
+ </p>
+ </p>
+ </b>
+ </hr>
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+
+
+
+</body>
+</html>
+
+
+
+
+
+<!--
+     FILE ARCHIVED ON 4:46:26 Jul 18, 2011 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 17:10:25 Feb 19, 2012.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->

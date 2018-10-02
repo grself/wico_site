@@ -1,0 +1,709 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+
+<!-- Mirrored from web.archive.org/web/20110718043144/http://www.wicocomico-indian-nation.com/pages/history.html by HTTrack Website Copier/3.x [XR&CO'2010], Sun, 19 Feb 2012 16:50:14 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+	<title>Wicocomico History</title>
+	<script>
+	var scrollMsg="WE WANT TO THANK ENGLAND, SPAIN, AUSTRALIA AND ALL OUR OTHER FRIENDS IN GIVING  THE USA ASSISTANCE DURING OUR CURRENT WAR AGAINST IRAQ"
+	var msgSpace="--- ---"
+	var beginPos=0
+	
+	function scrollingMsg(){
+	document.msgForm.scrollingMsg.value=scrollMsg.substring(beginPos, scrollMsg.length)+ msgSpace + scrollMsg.substring(0,beginPos)
+	beginPos=beginPos + 1
+	if(beginPos> scrollMsg.length){
+	beginPos=0
+	}
+	window.setTimeout ("scrollingMsg() ",170)
+	}
+	</script>
+</head>
+
+<body background="http://web.archive.org/web/20110718043144im_/http://www.wicocomico-indian-nation.com/images/papr.jpg"bg color="white" onload="scrollingMsg()">
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+
+<script type="text/javascript" src="../../../../../../staticweb.archive.org/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="../../../../../../staticweb.archive.org/js/graph-calc.js" ></script>
+<script type="text/javascript" src="../../../../../../staticweb.archive.org/jflot/jquery.min.js" ></script>
+<script type="text/javascript">
+//<![CDATA[
+var firstDate = 820454400000;
+var lastDate = 1356998399999;
+var wbPrefix = "http://web.archive.org/web/";
+var wbCurrentUrl = "http://web.archive.org/web/20110718043144/http://www.wicocomico-indian-nation.com/pages/history.html\/\/www.wicocomico-indian-nation.com\/pages\/history.html";
+
+var curYear = -1;
+var curMonth = -1;
+var yearCount = 18;
+var firstYear = 1996;
+var imgWidth=450;
+var yearImgWidth = 25;
+var monthImgWidth = 2;
+var trackerVal = "none";
+var displayDay = "18";
+var displayMonth = "Jul";
+var displayYear = "2011";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+
+function showTrackers(val) {
+	if(val == trackerVal) {
+		return;
+	}
+	if(val == "inline") {
+		document.getElementById("displayYearEl").style.color = "#ec008c";
+		document.getElementById("displayMonthEl").style.color = "#ec008c";
+		document.getElementById("displayDayEl").style.color = "#ec008c";		
+	} else {
+		document.getElementById("displayYearEl").innerHTML = displayYear;
+		document.getElementById("displayYearEl").style.color = "#ff0";
+		document.getElementById("displayMonthEl").innerHTML = displayMonth;
+		document.getElementById("displayMonthEl").style.color = "#ff0";
+		document.getElementById("displayDayEl").innerHTML = displayDay;
+		document.getElementById("displayDayEl").style.color = "#ff0";
+	}
+   document.getElementById("wbMouseTrackYearImg").style.display = val;
+   document.getElementById("wbMouseTrackMonthImg").style.display = val;
+   trackerVal = val;
+}
+function getElementX2(obj) {
+	var thing = jQuery(obj);
+	if((thing == undefined) 
+			|| (typeof thing == "undefined") 
+			|| (typeof thing.offset == "undefined")) {
+		return getElementX(obj);
+	}
+	return Math.round(thing.offset().left);
+}
+function trackMouseMove(event,element) {
+
+   var eventX = getEventX(event);
+   var elementX = getElementX2(element);
+   var xOff = eventX - elementX;
+	if(xOff < 0) {
+		xOff = 0;
+	} else if(xOff > imgWidth) {
+		xOff = imgWidth;
+	}
+   var monthOff = xOff % yearImgWidth;
+
+   var year = Math.floor(xOff / yearImgWidth);
+	var yearStart = year * yearImgWidth;
+   var monthOfYear = Math.floor(monthOff / monthImgWidth);
+   if(monthOfYear > 11) {
+       monthOfYear = 11;
+   }
+   // 1 extra border pixel at the left edge of the year:
+   var month = (year * 12) + monthOfYear;
+   var day = 1;
+	if(monthOff % 2 == 1) {
+		day = 15;
+	}
+	var dateString = 
+		zeroPad(year + firstYear) + 
+		zeroPad(monthOfYear+1,2) +
+		zeroPad(day,2) + "000000";
+
+	var monthString = prettyMonths[monthOfYear];
+	document.getElementById("displayYearEl").innerHTML = year + 1996;
+	document.getElementById("displayMonthEl").innerHTML = monthString;
+	// looks too jarring when it changes..
+	//document.getElementById("displayDayEl").innerHTML = zeroPad(day,2);
+
+	var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+	document.getElementById('wm-graph-anchor').href = url;
+
+   //document.getElementById("wmtbURL").value="evX("+eventX+") elX("+elementX+") xO("+xOff+") y("+year+") m("+month+") monthOff("+monthOff+") DS("+dateString+") Moy("+monthOfYear+") ms("+monthString+")";
+   if(curYear != year) {
+       var yrOff = year * yearImgWidth;
+       document.getElementById("wbMouseTrackYearImg").style.left = yrOff + "px";
+       curYear = year;
+   }
+   if(curMonth != month) {
+       var mtOff = year + (month * monthImgWidth) + 1;
+       document.getElementById("wbMouseTrackMonthImg").style.left = mtOff + "px";
+       curMonth = month;
+   }
+}
+//]]>
+</script>
+
+<style type="text/css">body{margin-top:0!important;padding-top:0!important;min-width:800px!important;}#wm-ipp a:hover{text-decoration:underline!important;}</style>
+<div id="wm-ipp" style="display:none; position:relative;padding:0 5px;min-height:70px;min-width:800px; z-index:9000;">
+<div id="wm-ipp-inside" style="position:fixed;padding:0!important;margin:0!important;width:97%;min-width:780px;border:5px solid #000;border-top:none;background-image:url('../../../../../../staticweb.archive.org/images/toolbar/wm_tb_bk_trns.png'); text-align:center;-moz-box-shadow:1px 1px 3px #333;-webkit-box-shadow:1px 1px 3px #333;box-shadow:1px 1px 3px #333;font-size:11px!important;font-family:'Lucida Grande','Arial',sans-serif!important;">
+   <table style="border-collapse:collapse;margin:0;padding:0;width:100%;"><tbody><tr>
+   <td style="padding:10px;vertical-align:top;min-width:110px;">
+   <a href="http://wayback.archive.org/web/" title="Wayback Machine home page" style="background-color:transparent;border:none;"><img src="../../../../../../staticweb.archive.org/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0"/></a>
+   </td>
+   <td style="padding:0!important;text-align:center;vertical-align:top;width:100%;">
+
+       <table style="border-collapse:collapse;margin:0 auto;padding:0;width:570px;"><tbody><tr>
+       <td style="padding:3px 0;" colspan="2">
+       <form target="_top" method="get" action="http://wayback.archive.org/web/form-submit.jsp" name="wmtb" id="wmtb" style="margin:0!important;padding:0!important;"><input type="text" name="url" id="wmtbURL" value="http://www.wicocomico-indian-nation.com/pages/history.html" style="width:400px;font-size:11px;font-family:'Lucida Grande','Arial',sans-serif;" onfocus="javascript:this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20110718043144" /><input type="submit" value="Go" style="font-size:11px;font-family:'Lucida Grande','Arial',sans-serif;margin-left:5px;" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td style="vertical-align:bottom;padding:5px 0 0 0!important;" rowspan="2">
+           <table style="border-collapse:collapse;width:110px;color:#99a;font-family:'Helvetica','Lucida Grande','Arial',sans-serif;"><tbody>
+			
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr style="width:110px;height:16px;font-size:10px!important;">
+           	<td style="padding-right:9px;font-size:11px!important;font-weight:bold;text-transform:uppercase;text-align:right;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+		                <a href="http://web.archive.org/web/20101224154935/http://wicocomico-indian-nation.com/pages/history.html" style="text-decoration:none;color:#33f;font-weight:bold;background-color:transparent;border:none;" title="24 Dec 2010"><strong>DEC</strong></a>
+		                
+               </td>
+               <td id="displayMonthEl" style="background:#000;color:#ff0;font-size:11px!important;font-weight:bold;text-transform:uppercase;width:34px;height:15px;padding-top:1px;text-align:center;" title="You are here: 4:31:44 Jul 18, 2011">JUL</td>
+				<td style="padding-left:9px;font-size:11px!important;font-weight:bold;text-transform:uppercase;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+                       Aug
+                       
+               </td>
+           </tr>
+
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr>
+               <td style="padding-right:9px;white-space:nowrap;overflow:visible;text-align:right!important;vertical-align:middle!important;" nowrap="nowrap">
+               
+		                <a href="http://web.archive.org/web/20101224154935/http://wicocomico-indian-nation.com/pages/history.html" title="15:49:35 Dec 24, 2010" style="background-color:transparent;border:none;"><img src="../../../../../../staticweb.archive.org/images/toolbar/wm_tb_prv_on.png" alt="Previous capture" width="14" height="16" border="0" /></a>
+		                
+               </td>
+               <td id="displayDayEl" style="background:#000;color:#ff0;width:34px;height:24px;padding:2px 0 0 0;text-align:center;font-size:24px;font-weight: bold;" title="You are here: 4:31:44 Jul 18, 2011">18</td>
+				<td style="padding-left:9px;white-space:nowrap;overflow:visible;text-align:left!important;vertical-align:middle!important;" nowrap="nowrap">
+               
+		                <a href="http://web.archive.org/web/20110718044501/http://www.wicocomico-indian-nation.com/pages/history.html" title="4:45:01 Jul 18, 2011" style="background-color:transparent;border:none;"><img src="../../../../../../staticweb.archive.org/images/toolbar/wm_tb_nxt_on.png" alt="Next capture" width="14" height="16" border="0"/></a>
+		                
+			    </td>
+           </tr>
+
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr style="width:110px;height:13px;font-size:9px!important;">
+				<td style="padding-right:9px;font-size:11px!important;font-weight: bold;text-align:right;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+		                <a href="http://web.archive.org/web/20090302083153/http://www.wicocomico-indian-nation.com/pages/history.html" style="text-decoration:none;color:#33f;font-weight:bold;background-color:transparent;border:none;" title="2 Mar 2009"><strong>2009</strong></a>
+		                
+               </td>
+               <td id="displayYearEl" style="background:#000;color:#ff0;font-size:11px!important;font-weight: bold;padding-top:1px;width:34px;height:13px;text-align:center;" title="You are here: 4:31:44 Jul 18, 2011">2011</td>
+				<td style="padding-left:9px;font-size:11px!important;font-weight: bold;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+                       2012
+                       
+				</td>
+           </tr>
+           </tbody></table>
+       </td>
+
+       </tr>
+       <tr>
+       <td style="vertical-align:middle;padding:0!important;">
+           <a href="http://wayback.archive.org/web/20110718043144*/http://www.wicocomico-indian-nation.com/pages/history.html" style="color:#33f;font-size:11px;font-weight:bold;background-color:transparent;border:none;" title="See a list of every capture for this URL"><strong>42 captures</strong></a>
+           <div style="margin:0!important;padding:0!important;color:#666;font-size:9px;padding-top:2px!important;white-space:nowrap;" title="Timespan for captures of this URL">8 Apr 01 - 18 Jul 11</div>
+       </td>
+       <td style="padding:0!important;">
+       <a style="position:relative; white-space:nowrap; width:450px;height:27px;" href="#" id="wm-graph-anchor">
+       <div id="wm-ipp-sparkline" style="position:relative; white-space:nowrap; width:450px;height:27px;background-color:#fff;cursor:pointer;border-right:1px solid #ccc;" title="Explore captures for this URL">
+			<img id="sparklineImgId" style="position:absolute; z-index:9012; top:0px; left:0px;"
+				onmouseover="showTrackers('inline');" 
+				onmouseout="showTrackers('none');"
+				onmousemove="trackMouseMove(event,this)"
+				alt="sparklines"
+				width="450"
+				height="27"
+				border="0"
+				src="http://wayback.archive.org/jsp/graph.jsp?graphdata=450_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:000000000000_2000:-1:000000000000_2001:-1:000101010001_2002:-1:000101010100_2003:-1:000102010100_2004:-1:010101010100_2005:-1:101000010101_2006:-1:100101001210_2007:-1:110000021000_2008:-1:000010000100_2009:-1:001000000000_2010:-1:000000000002_2011:6:000000200000_2012:-1:000000000000"></img>
+			<img id="wbMouseTrackYearImg" 
+				style="display:none; position:absolute; z-index:9010;"
+				width="25" 
+				height="27"
+				border="0"
+				src="../../../../../../staticweb.archive.org/images/toolbar/transp-yellow-pixel.png"></img>
+			<img id="wbMouseTrackMonthImg"
+				style="display:none; position:absolute; z-index:9011; " 
+				width="2"
+				height="27" 
+				border="0"
+				src="../../../../../../staticweb.archive.org/images/toolbar/transp-red-pixel.png"></img>
+       </div>
+		</a>
+
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td style="text-align:right;padding:5px;width:65px;font-size:11px!important;">
+       <a href="javascript:;" onclick="document.getElementById('wm-ipp').style.display='none';" style="display:block;padding-right:18px;background:url('../../../../../../staticweb.archive.org/images/toolbar/wm_tb_close.png') no-repeat 100% 0; color:#33f;font-family:'Lucida Grande','Arial',sans-serif;margin-bottom:23px;background-color:transparent;border:none;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="display:block;padding-right:18px;background:url('../../../../../../staticweb.archive.org/images/toolbar/wm_tb_help.png') no-repeat 100% 0; color:#33f;font-family:'Lucida Grande','Arial',sans-serif;background-color:transparent;border:none;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+
+</div>
+</div>
+<script type="text/javascript">
+ var wmDisclaimBanner = document.getElementById("wm-ipp");
+ if(wmDisclaimBanner != null) {
+   disclaimElement(wmDisclaimBanner);
+ }
+</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+
+<table border="0" width="650" align="center">
+<tr>
+<td>
+<font face="Arial, Helvetica, Times New Roman, Times" color="#993300">
+<div align="center">
+<h3>
+
+<P>
+WELCOME TO THE WICOCOMICO<br> INDIAN NATION<BR>
+HISTORY SITE
+<form name="msgForm">
+<input type="text" size="50"name="scrollingMsg">
+</h3>
+<HR align="center" width="350">
+</form>
+</div>
+</font>
+</td>
+</tr>
+</table>
+
+<!--Main Part of Page Starts Here-->
+<table border="0" cellspacing="0" cellpadding="0" width="650" align="center">
+<tr>
+<!--Cell One-Gutter at left margin-->
+<td valign="top" width="10">&nbsp;</td>
+
+<!--Cell Two-Menu-->
+<td valign="top" width="100">
+
+
+
+
+<font size="2">
+<font face="Arial, Helvetica, Times New Roman, Times" color="#993300">
+<b>
+<p>
+<i>
+MENU
+</i>
+<p>
+<a href="../index_old.html">Home</a><br>
+<p>
+<font color="red">History<br>
+<p>
+<a href="../pages/council.html">Council</a>
+<p>
+<a href="../pages/reps.html">Tribal-Reps</a>
+<p>
+<a href="../pages/constitution.html">Constitution</a>
+<p>
+<a href="../pages/dictionary.html">Dictionary</a>
+<p>
+<a href="../pages/editorial.html">Editorial</a><br>
+<p>
+<a href="../pages/photos.HTML">Photos</a><br>
+<p>
+<a href="../pages/membership.html">Membership</a><br>
+<p>
+<a href="../pages/application.html">Application</a><br>
+<p>
+<a href="../pages/flag.html">Flag</a><br>
+<p>
+<a href="../pages/comments.html">Comments</a><br>
+<p>
+<a href="../pages/chiefs.html">Chiefs</a>
+</p>
+</b>
+</font>
+</td>
+
+<!--Cell Three-Gutter at right of menu-->
+<td valign="top" width="10">&nbsp;</td>
+
+<!--Cell Four-The vertical bar-->
+<td valign="top" width="1" bgcolor="gray"><img src="http://web.archive.org/web/20110718043144im_/http://www.wicocomico-indian-nation.com/images/space.gif" width="1"
+height="1" border="0"></td>
+
+<!--Cell Five- Gutter at left of main Text-->
+<td valign="top" width="10">&nbsp;</td>
+
+<!--Cell Six-The main text-->
+
+<td valign="top">
+<b>
+<font face="Arial, Helvetica, Times New Roman, Times" color="#993300">
+<font size="2">
+PLEASE BE ADVISED THE FOLLOWING EXCERPT'S ARE FROM THE BOOK "WICOCOMICO INDIAN
+NATION OF THE POWHATAN EMPIRE" "THE TAPP FAMILY NATIVE AMERICAN HERITAGE" AND 
+IS COPYRIGHTED BY THE WICOCOMICO INDIAN NATION INC. USE OF THE FOLLOWING MATERIAL 
+WITHOUT PERMISSION MAY RESULT IN PERSECUTION FOR VIOLATING COPYRIGHT LAWS.
+<p>
+Our intent is to trace the Wicocomico from the earliest days until 1719. 
+Information concerning the Wicocomico after 1719 will not be released until 
+the Wicocomico submits petition documents to the BIA for recognition. All the 
+information has been verified from the original sources that are available. 
+Speculation or assumptions will be stated as such.
+</p>
+<p>
+ENGLISH ARRIVAL: SCOUTING FOR A SETTLEMENT<b>
+After an earlier skirmish with the Indians at Cape Henry, the three
+boats entered the James River on or about May 4th, 1607. After scouting the river
+the English found the place they thought  was a suitable on May 13th 1607, an 
+island in Pasaheagh country  without native habitation. The island could easily
+be defended and with sufficient deep water near the shore to tie down the three
+ships. However near by was a mosquito infested swamp, and the water in the James 
+turned brackish during the summer months. It wasn't until later they realized 
+the mistake.
+<p/>
+<p>
+CAPT JOHN SMITH'S EXPLORATION  OF THE MD AND VA EASTERN SHORE.JUNE 2-JULY 21, 1608.
+<blockquote>" Passing along the coast searching every inlet and bay fit for harbor and
+habitations...seeing many isles in the midst of the bay, we bore up for them. But
+ere we could obtain them, such an extreme gust of wind, rain, thunder, and lighting
+happened that with great danger we escaped unmerciful raging of that ocean like water.
+The highest land on the main, yet it was but low, we called Keale's Hill,<b>
+and these uninhabited isles Russell's Isles.
+<p/>
+<p>
+The next day, searching for fresh water, we could find none; the defect whereof forced
+us to follow the next eastern  channel, which brought us to the WIGHCOCOMOCO.The people
+at first with great fury seemed to assault us, yet at last with songs and dances and much
+mirth became very tractable. But searching their habitations for water, we could fill 
+but three barricoes, and that such puddle (muddy water) that never till then we ever   
+knew the want of water. We digged in and searched in many places, but before two days 
+were expired we would have refused two barricoes of gold for one of that puddle water of
+WIGHCOCOMOCO.</blockquote>
+<cite>From "The Generall Historie of Virginia, New-England, and the Summer Isles."
+By Capt John Smith.</cite>
+</p>
+<p>
+Smith's exploration took place in what we know today as Maryland and Virginia, on the
+east side of Chesapeake Bay. In Maryland Smith encountered the Maryland Wicocomico.Based on 
+recent research, the Maryland Wicocomico and Virginia Wicocomico may be connected.
+This possibility is discussed in later chapters.
+</p>
+<p>
+CAPT SMITH'S SECOND EXPEDITION: VIRGINIA SHORE JULY 24-SEPTEMBER 7, 1608.
+<blockquote>" In the discovery of the Rappahannock River, they were kindly received 
+by the people of Maraughacund. Here they met an old friend and acquaintance, one
+<i>MOSCO,</i> a lusty <i>INDIAN OF WIGHCOCOMOCE (WICOCOMICO)</i>on the River Patomack
+(Potomac). They supposed him some Frenchman's son because of his thick black
+bushy beard, and the Indians seldom have any at all. And he was not a little proud of
+this, and to see so many of his countrymen. He was very offcious and useful to the 
+English; they advised them by all means not to pass over to Rappahanocks who would 
+certainly kill them for being friends with the Maraughacunds, who had lately stolen three 
+of their King's women. But thinking, he only said this to secure their trade to his friends,
+they crossed the river to the Rappahanocks.There under the pretence of trade, they were 
+invited up to Rappahanock Creek, where they had laid an ambush, and after a smart skirmish
+in which many Indians were slain and wounded, the English came off the victors without the
+least hurt. Having driven them into the woods, they seized three or four canoes, full of
+commodities, which with some arrows, they ahd gathered up, they presented to MOSCO for
+his kindness. Under he on his part, received them in the most triumphant manner,and
+in martial Order Under Arms, that he could procure of the Maraughaacunds".
+</blockquote>
+<cite>From The Generall Historie of Virginia, New England, and the Summer Isles.<b>
+By Capt John Smith.
+</cite>
+</p>
+<p>
+During Capt Smith's second expedition, he mentions the Wighcocomoco of Virginia, being
+located on the Patawomek River (Potomac River). The actual location of the Wicocomico
+village was at the end and slightly north of the Little Wicomico River. According to 
+Stephen Potter, the Wicocomico King's village was at the end and slightly north of the
+Little Wicomico River and his subjects had a village close to the mouth and south of the 
+Little Wicomico called Cinquck. This is the first mention of the Wicocomico.
+</p>
+<p>
+One has to question the validity of this expedition being his first on the shores of 
+Virginia. His comments  about meeting "Mosco" an old friend from the Wighcocomoco
+tends to imply they were acquainted before, indication that he had made some type of
+trip through the area prior to this expedtion.
+</p>
+<p>
+Smith also mentioned that Mosco was thought to be part French because of his thick
+black beard. I personally believe that Mosco is part Spanish. One has to keep
+in mind that the Spanish were in the area in 1525 and later. My personal thoughts 
+on the influence of the Spanish in the area will be discussed in a separate chapter.
+</p>
+<p>
+The following is an excerpt from the "History of the Discovery and Settlement 
+of Virginia" by William Stith one of the Governors of William and Mary College.
+<blockquote>"At this time also Captain Raleigh Croshaw was in the Patowmack River
+(Potomac River) trading in a small bark, commanded by Capt Spilman. There an Indian 
+stole aboard and told them of the massacre, (1622) and that Opechancanough had been
+practicing with his King and Country to betray them, which they refused to do, but
+that the Indians of WIGHCOCOMOCO ( WICOCOMICO) had undertaken it. Hereon Captain 
+Spilman went thither, but they feeling his men so vigilant and well armed, suspected 
+themselves to be discovered, therefore, the better to colour their guilt, and delude
+him, they gave him such satisfaction in his trade, that his vessel was soon near loaded".
+</blockquote>
+</p>
+<p>
+To sum it up, the WIGHCOCOMOCO (Wicocomico) were turned in by some unknown Indian,
+in turn Spilman went to the Wighcocomoco camp. The Wighcocomoco understood that they were 
+suspect of planning to participate in the 1622 uprising. They traded so well  with Spilman,
+preventing an attack on their village.
+</p>
+<p>
+The following paragraph (William Strachey 1609-1612) discusses the Wighcocomoco and
+the population of the Wighcocomoco and other tribes on the Potomac River.
+<blockquote>"The fourth river is called Patawomeck (Potomac) and we called it Elizabeth
+River, and is six or seven miles breadth. It is navigable 120 miles, and is fed as
+the rest with many sweet rivers and springs which fall from the bordering hills. Many
+of them are planted and yield no less plenty and variety fo fruit than the other rivers.
+It exceedeth with abundance of fish, and is inhabited on both side: First on the south
+side at the very entrance is the WIGHCOCOMOCO,and which hath 130 fighting men; beyond
+that is Cekakawon with 30 men; then Onawmanient with 100 men; then Patawomeck with 160
+able men".
+</blockquote>
+</p>
+<p>
+Several formulas were developed by historians to determine the population of a village.
+some used a multiplier of 3 1/2, others used 4. The most common multiplier used for 
+the Wighcocomoco, was 4, making the total  tribal strength at 520. the Wighcocomoco
+was one of the largest tribes in Virginia at that time.
+</p> 
+<p>
+WIGHCOCOMOCO, 1650 TO 1719
+</p>
+<p>
+The 1622 incident concerning the confrontation with the Wighcocomoco Tribe is the last
+mention of the Wighcocomoco until Northumberland become a county in 1648. Previously
+the area of the Wicocomico Indians remained in the hands of local Indians, although 
+there were excursions by the English into the area. After the English discovered 
+the potential of the area, they immediately annexed the area as Northumberland County.
+The original boundaries were located between the Potomac and the Rappahannock Rivers and
+the western boundaries were open for expansion in the future. In 1651 Lancaster County
+was formed from a section of Northumberland.
+</p>
+<p>
+The Virginia General Assembly passed a law in 1652 that authorized 50 acres per bowman.
+Northumberland County complied with this order by directing, Machymap ( Werowance of 
+the Cekacawon and Wicocomico Indians.) to have his land surveyed. This indicates that
+sometimes between 1652 and 1655 the previously seperate tribes (Wicocomico and
+Cekacawon) were directed by the Northumberland Assembly, to merge as one single entity.
+Also during this period both tribes were relocated to the south of the Great Wicoccomico
+River, whereas  previously the Cekacawon were located near the Coan River and the 
+Wicocomico at the end and slightly north of the Little Wicomico.
+</p>
+<p>
+The survey in 1655/56 by Gervais Dodson surveyed 4,400 acres near Dividing Creek
+for the merged tribes. There is a strong possibility  the Cuttatawomen Tribe merged 
+with the Wicocomico and Cekacawon between 1656/59 (Helen Rountree). Supposedly the
+Cuttatawomen were reported to have been moving toward the north in the direction of
+the Wicocomico at their new lands. The Cuttatawomen as a tribe dropped out of existence
+and were never heard of again.
+</p>
+<p>
+Machywap was selected as the Werowance ( by the English) of the combined Wicocomico
+and Cekacawon, because he was considered a friend and easy to manage. This selection
+did not go well with the Wicocomico, they wanted their person as the leader.The conflict 
+was so great that Machywap's life was threatened to the point that the English had to
+provide protection for him. By 1660 the merged tribes were called the Wicocomico and
+settled in their new lands of 4,400 acres. However this did not last long, shortly 
+after the Wicocomico were relocated, their new lands were being encroached on by the 
+English, supposedly Samuell Mathewes( former governor) had previously been issued a
+grant for the same land that had been surveyed for the Wicocomico.Between 1660 and
+1673 the whites and the Wicocomico were constantly in court battling over land disputes.
+Finally in 1673 the disputes were resolved in favor of the Wicocomico and the 1655
+boundaries reestablished. However, even though the disputes were in favor of the 
+Wicocomico, by 1719 approximately 1,700 of the 4,400 acres were left, the land  had
+been given out as grants by the English even though the Wicocomico had been forced
+to relocate from their original ancestral near the Little Wicocomico River  in 1652.
+</p>
+<p>
+Begining with Machywap, the Northumberland Commissioners(1655 to 1719)appointed 
+the successors to the position of Werowance. However the Wicocomico refused to 
+cooperate.Pewem apparently was selected by the tribe as Chief, however the English
+did not recognize him as such and addressed him as "Great Man". With this control by
+the county commissioners and the law passed by the English that stated that if a 
+tribe deserted their lands the English could move in and confiscate the land; these two
+acts effectively destroyed the tribes as an independent political entity. 
+</p>
+<p>
+The last recognized colonial Tribal Chief was "King William Taptico".(visit our 
+"Chief" web page for known list of Wicocomico Tribal Chiefs). Willian died in 1719;
+after his death, his wife, Elizabeth settled his estate. At the onset of settling
+William's estate, Elizabeth began the process by signing the documentation as
+"Elizabeth Taptico and completed the process by signing "Elizabeth Tapp".
+</p>
+<p>
+THIS IS THE BEGINING OF THE NATIVE AMERICAN TAPPS.
+</p>
+<p>
+Current Wicocomico family names are,Taptico/Tapp, Veazey/Vesey, Mosco, Nordas,
+Roberts and possibly Curtis.
+</p>
+<p>
+<IMG src="../images/canoe.jpg" align="right" border="6">
+<P align="center">
+<B>IMAGES</B>
+</P>
+<P>
+The area inhabited by tribes of the Powhatan Empire depended on the waterways
+for transportation and some of their food supplies. The most popular method of
+transportation was the canoe. A fire was built around the base of a tree to weaken the tree
+and then toppled. After the limbs were trimmed, a fire was built on the log to 
+char the area that was to be dug out. The primary tool used for the removel 
+of charred wood was a large shell.
+</p>
+<IMG src="../images/2w.jpg" align="right" border="6">
+<P>
+Image two represents the type of clothes worn by women. The apron type
+apparel consisted of various materials, depending on the wealth of the
+person. Aprons were made of animal hides and various grasses(called 
+silk grass). Normally waist up the women were bare other than adornments
+of some type. Hair styles varied from tribe to tribe, some wore bangs, 
+others cut their hair to ear level, others  wore their hair pulled back.Again it
+depended on the tribe affiliation.
+</P>
+<IMG src="../images/wandc.jpg" align="right" length="600" width="300" border="6">
+<P>
+Image three indicate how the mothers carried their children and was described by
+Robert Beverley in his book "The History And Present State of Virginia", written in
+1705 and is one of the earliest comprehensive works done. According to Beverley, the 
+children were kept on a hard board until their bones begin to harden. They were removed
+and allowed to play, but most of the time was spent on the board. Another custom that
+was foreign to the English; each morning the child was dipped in cold water.
+</P>
+<P>
+The images are generic and are considered to be the type of clothing and other every day
+activities practiced by the tribes of the Powhatan Confederacy. The images are etchings by
+De Bry, sometimes in the earlier 1600s. The coloring was added recently.
+</P>
+<P align="center">
+<FONT size="2">
+<B>TAPTICO-TAPP</B>
+<P>
+This section gives a brief  history outline of the connection between King William
+Taptico and the Tapps, included is the first four generations of William Taptico and
+when they begin using the name,Tapp
+</p>
+<p>
+After King William Taptico, the last hereditary Tribal Chief of the Wicocomico died,
+the English did not appoint a successor, nor did a descendant of Taptico take over
+reign of the tribe. Taptico's wife Elizabeth, settled his estate, (which was substantial)
+and began the process by signing the documents as Elizabeth Taptico,and completed the process
+by signing Elizabeth Tapp.This appears to be the period in time when the Indian Tapps came
+into being.Currently we do not have proof if Elizabeth was English or Indian.
+The book,"Tapp Family of America" stated that she was English but did not offer proof.
+During this period it was against English law for Indians and whites to marry, so there is
+doubt that Elizabeth was English. 
+
+</p>
+<i><b>1. WILLIAM TAPPTICO I</i></B> was born sometimes in the 1650s in Northumberland
+County VA and died after November 1695, most likely  in Northumberland County VA.<BR>
+
+WILLIAM I married Elinder  ?  date unknown in Northumberland County VA. We can not
+determine Elinder's surname or where she was born, she most likely died in Northumberland 
+VA.
+<br>
+
+
+They had only one proven child.  William Taptico II (Recent research may have revealed
+another son , George Taptico, however the relationship is speculation, but very possible)
+</P>
+<P>
+<i><B>2. WILLIAM TAPTICO II</i></B> born about 1690 in Northumberland County VA and died 
+June  1719 in Northumberland County VA.
+WILLIAM II married Elizabeth ? date unknown and most likely in Northumberland County VA.
+and died about 1724 in Spotslvania VA.
+
+Shorly after her husbands death Elizabeth began using the surname Tapp,at this point in time
+the children will be referred to as Tapp.
+<p>
+They had three children. William Tapp III, Charity Tapp, Vincent Tapp.
+</P>
+<P>
+<i><B>3. WILLIAM TAPP III</i></B> born about 1707,Richmond County VA,died January 1791 Culpeper County VA.
+Married Christian Bourne about 1725 in VA.She was born about 1708 in Essex County VA. and
+died about 1780 in Fredrick County VA.<BR>
+
+They had eight/nine children. <i>Vincent</i> , William , Lewis , Ann , Alice (Alse) , Elizabeth ,
+Sarah , Mary.( Recently one our members stated that William III had nine children
+which is supposedly Margaret. Until proven this is an assumption)<br>
+
+<i><B>CHARITY TAPP</i></B> born about 1709, Richmond County VA, married BARTHOLEMEW WOOD,about 1724.<BR>
+
+<i><B>VINCENT TAPP</i></B> born about 1714, Richmond County VA,died about 1751,Fredrick Co.VA
+Married Elizabeth Bourne about 1735 in VA. She was born in VA and died in VA.
+</P>
+<P>
+<i><b>4. VINCENT TAPP</i></b>( William  Tapp III , William Taptico II , William Taptico I)
+born about 1726  Culpepper County Virginia . Died about January 17, 1791 Culpepper County
+Virginia, Married Mary (Mollie)Jett about 1754, Virginia. She was born (Unknown)<br>
+They had eleven children. <i>Moses</i> , William , Vincent , James H , Nimrod , Elias ,
+Sussana , John , Ann , Molly , Sally.
+  </p>
+  <p>
+The  above lineage is verified and will give the visitor a good solid foundation to
+start his/her research.
+</p>  
+
+
+<p>
+Extant records of Northumberland County VA indicate that other Wicocomico family names are,
+Veazey, Curtis, Mosco, Nordas, and possibly Roberts.
+</p>
+<p>
+Other major family lines in the earlier Taptico/Tapp lineage are; Bourne,
+Dogget,Fowler, Boch, Jett, and Wright. 
+</b>
+</p>
+</td>
+</tr>
+</table>
+<table width"650" align="center" border="0">
+<tr>
+<td valign="top" align="center" colspan="2">
+<font face="Arial, Helvetica, Times New Roman, Times" color="#993300">
+<b>
+<p>&nbsp;
+
+
+</p>
+<hr align="center" width="350">
+<font size="2">
+<a href="../index_old.html">[Home]</a>&nbsp;&nbsp;
+<font color="red">[History]<br>&nbsp;&nbsp;
+<a href="../pages/council.html">[Council]</a>&nbsp;&nbsp;
+<a href="../pages/reps.html">[Representative]</a>&nbsp;&nbsp
+<a href="../pages/constitution.html">[Constitution]</a>&nbsp;&nbsp
+<a href="../pages/dictionary.html">[Dictionary]</a>&nbsp;&nbsp;
+<a href="../pages/editorial.html">[Editorial]</a>&nbsp;&nbsp;
+<a href="../pages/photos.HTML">[Photos]</a>&nbsp;&nbsp;
+<a href="../pages/membership.html">[Membership]</a>&nbsp;&nbsp;
+<a href="../pages/application.html">[Application]</a>&nbsp;&nbsp;
+<a href="../pages/flag.html">[Flag]</a>&nbsp;&nbsp;
+<a href="../pages/comments.html">[Comments]</a>&nbsp;&nbsp;
+<a href="../pages/chiefs.html">[Chiefs]</a>
+<hr align="center" width="350"
+></b>
+</font>
+</td>
+</tr>
+<tr>
+<font face="Arial, Helvetica, Times New Roman, Times" color="#993300" size="2">
+<td align="left">&copy <a href="mailto:eagleman1@localnet.com">Al Byrd</a>,2001</td>
+<td align="right">Last Updated July 2009</td>
+</font>
+</tr>
+</table>
+</b>
+</body>
+
+<!-- Mirrored from web.archive.org/web/20110718043144/http://www.wicocomico-indian-nation.com/pages/history.html by HTTrack Website Copier/3.x [XR&CO'2010], Sun, 19 Feb 2012 16:50:15 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+</html>
+
+
+
+
+
+<!--
+     FILE ARCHIVED ON 4:31:44 Jul 18, 2011 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 16:50:06 Feb 19, 2012.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->

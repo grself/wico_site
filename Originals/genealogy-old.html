@@ -1,0 +1,840 @@
+﻿
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+	<title>GENEALOGY</title>
+	
+</head>
+<body background="../pages/papr.jpg" bgcolor="white">
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+
+<script type="text/javascript" src="../pages/disclaim-element.js" ></script>
+<script type="text/javascript" src="../pages/graph-calc.js" ></script>
+<script type="text/javascript" src="../pages/jquery.min.js" ></script>
+<script type="text/javascript">
+//<![CDATA[
+var firstDate = 820454400000;
+var lastDate = 1356998399999;
+var wbPrefix = "http://web.archive.org/web/";
+var wbCurrentUrl = "http:\/\/www.wicocomico-indian-nation.com\/pages\/genealogy.html";
+
+var curYear = -1;
+var curMonth = -1;
+var yearCount = 17;
+var firstYear = 1996;
+var imgWidth=425;
+var yearImgWidth = 25;
+var monthImgWidth = 2;
+var trackerVal = "none";
+var displayDay = "18";
+var displayMonth = "Jul";
+var displayYear = "2011";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+
+function showTrackers(val) {
+	if(val == trackerVal) {
+		return;
+	}
+	if(val == "inline") {
+		document.getElementById("displayYearEl").style.color = "#ec008c";
+		document.getElementById("displayMonthEl").style.color = "#ec008c";
+		document.getElementById("displayDayEl").style.color = "#ec008c";		
+	} else {
+		document.getElementById("displayYearEl").innerHTML = displayYear;
+		document.getElementById("displayYearEl").style.color = "#ff0";
+		document.getElementById("displayMonthEl").innerHTML = displayMonth;
+		document.getElementById("displayMonthEl").style.color = "#ff0";
+		document.getElementById("displayDayEl").innerHTML = displayDay;
+		document.getElementById("displayDayEl").style.color = "#ff0";
+	}
+   document.getElementById("wbMouseTrackYearImg").style.display = val;
+   document.getElementById("wbMouseTrackMonthImg").style.display = val;
+   trackerVal = val;
+}
+function getElementX2(obj) {
+	var thing = jQuery(obj);
+	if((thing == undefined) 
+			|| (typeof thing == "undefined") 
+			|| (typeof thing.offset == "undefined")) {
+		return getElementX(obj);
+	}
+	return Math.round(thing.offset().left);
+}
+function trackMouseMove(event,element) {
+
+   var eventX = getEventX(event);
+   var elementX = getElementX2(element);
+   var xOff = eventX - elementX;
+	if(xOff < 0) {
+		xOff = 0;
+	} else if(xOff > imgWidth) {
+		xOff = imgWidth;
+	}
+   var monthOff = xOff % yearImgWidth;
+
+   var year = Math.floor(xOff / yearImgWidth);
+	var yearStart = year * yearImgWidth;
+   var monthOfYear = Math.floor(monthOff / monthImgWidth);
+   if(monthOfYear > 11) {
+       monthOfYear = 11;
+   }
+   // 1 extra border pixel at the left edge of the year:
+   var month = (year * 12) + monthOfYear;
+   var day = 1;
+	if(monthOff % 2 == 1) {
+		day = 15;
+	}
+	var dateString = 
+		zeroPad(year + firstYear) + 
+		zeroPad(monthOfYear+1,2) +
+		zeroPad(day,2) + "000000";
+
+	var monthString = prettyMonths[monthOfYear];
+	document.getElementById("displayYearEl").innerHTML = year + 1996;
+	document.getElementById("displayMonthEl").innerHTML = monthString;
+	// looks too jarring when it changes..
+	//document.getElementById("displayDayEl").innerHTML = zeroPad(day,2);
+
+	var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+	document.getElementById('wm-graph-anchor').href = url;
+
+   //document.getElementById("wmtbURL").value="evX("+eventX+") elX("+elementX+") xO("+xOff+") y("+year+") m("+month+") monthOff("+monthOff+") DS("+dateString+") Moy("+monthOfYear+") ms("+monthString+")";
+   if(curYear != year) {
+       var yrOff = year * yearImgWidth;
+       document.getElementById("wbMouseTrackYearImg").style.left = yrOff + "px";
+       curYear = year;
+   }
+   if(curMonth != month) {
+       var mtOff = year + (month * monthImgWidth) + 1;
+       document.getElementById("wbMouseTrackMonthImg").style.left = mtOff + "px";
+       curMonth = month;
+   }
+}
+//]]>
+</script>
+
+<style type="text/css">body{margin-top:0!important;padding-top:0!important;min-width:800px!important;}#wm-ipp a:hover{text-decoration:underline!important;}</style>
+<div id="wm-ipp" style="display:none; position:relative;padding:0 5px;min-height:70px;min-width:800px; z-index:9000;">
+<div id="wm-ipp-inside" style="border-left: 5px solid #000; border-right: 5px solid #000; border-bottom: 5px solid #000; position:fixed; padding:0!important; margin:0!important; width:97%; min-width:780px; border-top:none;background-image:url('../pages/wm_tb_bk_trns.png'); text-align:center; -moz-box-shadow:1px 1px 3px #333; -webkit-box-shadow:1px 1px 3px #333; box-shadow:1px 1px 3px #333; font-size:11px!important; font-family:'Lucida Grande','Arial',sans-serif!important;">
+   <table style="border-collapse:collapse;margin:0;padding:0;width:100%;"><tbody><tr>
+   <td style="padding:10px;vertical-align:top;min-width:110px;">
+   <a href="http://wayback.archive.org/web/" title="Wayback Machine home page" style="background-color:transparent;border:none;">
+   <img src="../pages/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0"/></a>
+   </td>
+   <td style="padding:0!important;text-align:center;vertical-align:top;width:100%;">
+
+       <table style="border-collapse:collapse;margin:0 auto;padding:0;width:570px;"><tbody><tr>
+       <td style="padding:3px 0;" colspan="2">
+       <form target="_top" method="get" action="http://wayback.archive.org/web/form-submit.jsp" name="wmtb" id="wmtb" style="margin:0!important;padding:0!important;"><input type="text" name="url" id="wmtbURL" value="http://www.wicocomico-indian-nation.com/pages/genealogy.html" style="width:400px;font-size:11px;font-family:'Lucida Grande','Arial',sans-serif;" onfocus="javascript:this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20110718044645" /><input type="submit" value="Go" style="font-size:11px;font-family:'Lucida Grande','Arial',sans-serif;margin-left:5px;" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td style="vertical-align:bottom;padding:5px 0 0 0!important;" rowspan="2">
+           <table style="border-collapse:collapse;width:110px;color:#99a;font-family:'Helvetica','Lucida Grande','Arial',sans-serif;"><tbody>
+			
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr style="width:110px;height:16px;font-size:10px!important;">
+           	<td style="padding-right:9px;font-size:11px!important;font-weight:bold;text-transform:uppercase;text-align:right;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+		                <a href="http://web.archive.org/web/20101224155204/http://wicocomico-indian-nation.com/pages/genealogy.html" style="text-decoration:none;color:#33f;font-weight:bold;background-color:transparent;border:none;" title="24 Dec 2010"><strong>DEC</strong></a>
+		                
+               </td>
+               <td id="displayMonthEl" style="background:#000;color:#ff0;font-size:11px!important;font-weight:bold;text-transform:uppercase;width:34px;height:15px;padding-top:1px;text-align:center;" title="You are here: 4:46:45 Jul 18, 2011">JUL</td>
+				<td style="padding-left:9px;font-size:11px!important;font-weight:bold;text-transform:uppercase;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+                       Aug
+                       
+               </td>
+           </tr>
+
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr>
+               <td style="padding-right:9px;white-space:nowrap;overflow:visible;text-align:right!important;vertical-align:middle!important;" nowrap="nowrap">
+               
+		                <a href="http://web.archive.org/web/20101224155204/http://wicocomico-indian-nation.com/pages/genealogy.html" title="15:52:04 Dec 24, 2010" style="background-color:transparent;border:none;">
+						<img src="../pages/wm_tb_prv_on.png" alt="Previous capture" width="14" height="16" border="0" /></a>
+		                
+               </td>
+               <td id="displayDayEl" style="background:#000;color:#ff0;width:34px;height:24px;padding:2px 0 0 0;text-align:center;font-size:24px;font-weight: bold;" title="You are here: 4:46:45 Jul 18, 2011">18</td>
+				<td style="padding-left:9px;white-space:nowrap;overflow:visible;text-align:left!important;vertical-align:middle!important;" nowrap="nowrap">
+               
+                       <img src="../pages/wm_tb_nxt_off.png" alt="Next capture" width="14" height="16" border="0"/>
+                       
+			    </td>
+           </tr>
+
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr style="width:110px;height:13px;font-size:9px!important;">
+				<td style="padding-right:9px;font-size:11px!important;font-weight: bold;text-align:right;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+		                <a href="http://web.archive.org/web/20081025035757/http://www.wicocomico-indian-nation.com/pages/genealogy.html" style="text-decoration:none;color:#33f;font-weight:bold;background-color:transparent;border:none;" title="25 Oct 2008"><strong>2008</strong></a>
+		                
+               </td>
+               <td id="displayYearEl" style="background:#000;color:#ff0;font-size:11px!important;font-weight: bold;padding-top:1px;width:34px;height:13px;text-align:center;" title="You are here: 4:46:45 Jul 18, 2011">2011</td>
+				<td style="padding-left:9px;font-size:11px!important;font-weight: bold;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+                       2012
+                       
+				</td>
+           </tr>
+           </tbody></table>
+       </td>
+
+       </tr>
+       <tr>
+       <td style="vertical-align:middle;padding:0!important;">
+           <a href="http://wayback.archive.org/web/20110718044645*/http://www.wicocomico-indian-nation.com/pages/genealogy.html" style="color:#33f;font-size:11px;font-weight:bold;background-color:transparent;border:none;" title="See a list of every capture for this URL"><strong>32 captures</strong></a>
+           <div style="margin:0!important;padding:0!important;color:#666;font-size:9px;padding-top:2px!important;white-space:nowrap;" title="Timespan for captures of this URL">8 Apr 01 - 18 Jul 11</div>
+       </td>
+       <td style="padding:0!important;">
+       <a style="position:relative; white-space:nowrap; width:425px;height:27px;" href="" id="wm-graph-anchor">
+       <div id="wm-ipp-sparkline" style="position:relative; white-space:nowrap; width:425px;height:27px;background-color:#fff;cursor:pointer;border-right:1px solid #ccc;" title="Explore captures for this URL">
+			<img id="sparklineImgId" style="position:absolute; z-index:9012; top:0px; left:0px;"
+				onmouseover="showTrackers('inline');" 
+				onmouseout="showTrackers('none');"
+				onmousemove="trackMouseMove(event,this)"
+				alt="sparklines"
+				width="425"
+				height="27"
+				border="0"
+				src="http://wayback.archive.org/jsp/graph.jsp?graphdata=425_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:000000000000_2000:-1:000000000000_2001:-1:000101010001_2002:-1:010001010101_2003:-1:000001110101_2004:-1:010101010100_2005:-1:100000000000_2006:-1:000010000110_2007:-1:000000010000_2008:-1:010020001100_2009:-1:000000000000_2010:-1:000000000002_2011:6:000000100000_2012:-1:000000000000"></img>
+			<img id="wbMouseTrackYearImg" 
+				style="display:none; position:absolute; z-index:9010;"
+				width="25" 
+				height="27"
+				border="0"
+				src="../pages/transp-yellow-pixel.png"></img>
+			<img id="wbMouseTrackMonthImg"
+				style="display:none; position:absolute; z-index:9011; " 
+				width="2"
+				height="27" 
+				border="0"
+				src="../pages/transp-red-pixel.png"></img>
+       </div>
+		</a>
+
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td style="text-align:right;padding:5px;width:65px;font-size:11px!important;">
+       <a href="javascript:;" onclick="document.getElementById('wm-ipp').style.display='none';" style="border-style: none; border-color: inherit; border-width: medium; display:block; padding-right:18px;background:url('../pages/wm_tb_close.png') no-repeat 100% 0; color:#33f; font-family:'Lucida Grande','Arial',sans-serif; margin-bottom:23px;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="border-style: none; border-color: inherit; border-width: medium; display:block; padding-right:18px;background:url('../pages/wm_tb_help.png') no-repeat 100% 0; color:#33f; font-family:'Lucida Grande','Arial',sans-serif;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+
+</div>
+</div>
+<script type="text/javascript">
+ var wmDisclaimBanner = document.getElementById("wm-ipp");
+ if(wmDisclaimBanner != null) {
+   disclaimElement(wmDisclaimBanner);
+ }
+</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+
+
+<table border="0" cellspacing="0" cellpadding="0" width="650" align="center">
+<tr>
+<td>
+<font face="Arial, Helvetica, Times New Roman, Times" color="#993300">
+<div align="center">
+<font size="4">
+<b>WELCOME TO THE TAPTICO-TAPP<br> GENEALOGY<br>HISTORY SITE
+<hr align="center" width="350">
+</div>
+</font>
+</td>
+</tr>
+</table>
+<!--Main part of page starts here-->
+
+<table border="0" cellspacing="0" cellpadding="0" width="800" align="center">
+<tr>
+<!--Cell One-Gutter at left margin-->
+ <td valign="top" width="10">&nbsp;</td>
+ <!--Cell Two-Menu-->
+ <td valign="top" width="75">
+ <font size="2">
+ <font face="Arial, Helvetica, Times New Roman, Times" color="brown">
+ <b>
+ <p>
+ <i>
+ MENU
+ </i>
+ </p>
+ <p>
+ <a href="../index_old.html">Home</a>
+ <p>
+ <a href="../pages/history.html">History</a><bg>
+ <p>
+ <a href="../pages/council.html">Council</a><br>
+ <p>
+ <a href="../pages/reps.html">Tribal-Reps</a><br>
+ <p>
+ <a href="../pages/constitution.html">Constitution</a><br>
+ <p>
+ <a href="../pages/dictionary.html">Dictionary</a><br>
+ <p>
+ Discussion<br>
+ <p>
+ <a href="../pages/photos.HTML">Photos</a><br>
+ <p>
+ <a href="../pages/membership.html">Membership</a><br>
+ <p>
+ <a href="../pages/application.html">Application</a><br>
+ <p>
+ <a href="../pages/flag.html">Flag</a><br>
+ <p>
+ <a href="../pages/comments.html">Comments</a><br>
+ <p>
+ <a href="../pages/chiefs.html">Chiefs</a><br>
+ <p>
+ Genealogy
+ </b>
+ </font>
+ </td>
+ <!--Cell Three-Gutter at right of menu-->
+ <td valign="top" width="10">&nbsp;</td>
+ <!--Cell Four-the Vertical Bar-->
+ <td valign="top"width="1" bgcolor="gray">
+ <img src="../pages/space.gif" width="1"
+ height="1" border="0"></td>
+ <!--Cell Five-Gutter at left of Main Text-->
+ <td valign="top" width="10">&nbsp;</td>
+ <!--Cell Six-The main Text-->
+ <td valign="top">
+ <b>
+ <font face=" Arial, Helvetica, Times New Roman, Times" Color="#993300">
+ <font size="2">
+ </p>
+ <p>
+
+
+
+<b>BEFORE</b> we begin our narrative on our heritage, I would like to dedicate  
+the following  story  (author unknown) to our Tribe. The contents of this story 
+tells about the storyteller's feeling and is in the  best tradition of  all Native Americans
+ability to carry on tribal tradition through story telling and keeping their
+heritage alive.</p>
+<p>
+We are the chosen! My feelings are in each family there is one who seems called to
+find the ancestors, to put flesh on their bones and make them live again, to tell 
+the family  and tribal story and to feel  that somehow they know and approve.
+To me doing genealogy is not a cold gathering of facts but instead, breathing
+life into all who have gone before. We are the story tellers of the tribe ! All
+tribes have one ! We have been called as it were by our Native American genes.
+Those who have gone before us cry out to us; tell our story. So we do.
+</p>
+<p>
+In finding them , we somehow find ourselves. How many graves have I stood 
+before now and cried ? I have  lost count. How many times have I told our ancestors,
+you have a wonderful family, you would be proud of us. How many times have I walked
+up to a grave and felt somehow there was love there for me ? I cannot say.
+</p>
+<p>
+It goes beyond just documenting facts, it goes to who I am and why do I 
+do the things I do. It's about seeing a cemetery about to be lost forever
+to weeds and indifference and saying, I can't let this happen. The bones are
+bones of my bone and flesh of my flesh. It's  doing something about it. It's about 
+pride in what our ancestors were  able to accomplish, how they contributed to what
+we are today. It's about respecting their hardships  and losses, their never giving
+in or giving up, their determination to go on and build a life for their family.
+</p>
+<p>
+It was a deep pride that they fought to make us a Nation. It was a deep and immense
+understanding that they were doing it for us, that we might be born who we are, that 
+we might remember them. So we do. With love  and caring and scribing each fact of 
+of their existence, because we are them and they are us. So as a scribe called, I tell 
+the story of our tribe and family.
+</p>
+<p>
+That is why I do my family genealogy, and that is what calls those young and old
+to step up and put flesh on their bones.
+</p>
+<hr align="center"width="450">
+<p>
+What I will attempt to do is present a theory (based on various documents) on how the English
+Tapp's and how the Native American Tapp's were intermingled. To
+do this I used the Tapps that were presented in the Tapp Family Book by Lile, fulcher and Tapp.
+This book is very inaccurate and should never be used as a research guide. However the Tapps
+the book mentioned are real but not listed accurately. These Tapps were before 1719,the date 
+our Native American Tapps came into being. ( When Elizabeth Taptico changed the name to Tapp
+upon William Taptico's death). It's close to being fact that this is the first concise bit 
+of information that is available prior to 1719.
+</p>
+<p>
+First, we do not have proof that Thomas Tapp married Mary Lewis, however we do have 
+evidence that a Mary Tapp married a John Butcher, this has been assumed by the Liles 
+Fulcher Tapp book that this was the widow of Thomas Tapp.
+</p>
+ACCORDING TO THE TAPP FAMILY BOOK<br>
+Thomas Tapp  b@ 1628  d @ May 18, 1689, married Mary Lewis by 1655, b @ 1636 
+d after 1691.<br>
+CHILDREN:<br>
+<ul>
+<li>
+John Tapp b @ 1656  married Jane Fullerton. ( Ajohn Tapp rented 150 acres in New Kent County
+in 1704...probably John Jr. His son John Jr was named in the will of Jane Fullerton.
+Henry Tapp Information not available.
+William Tapp b @ 1664 married Elinor Jones  by 1689.This is suposedly the father of
+King William Taptico.
+Mary Tapp b @ 1670  d  September 10,1731 or Jan 16, 1726, married Joseph Bragg.
+</li>
+<ul>
+</ul>
+</p>
+We will state some facts and then list the sources. According to all extant records
+available, Thomas and Mary had one child.<br>
+JOHN, can be identified thru various order book entry's that will be listed, later.
+</p>
+<p>
+HENRY, can not be found, there was a  Henry Tapp listed in Assembly of the VA council
+in 1850s, however he would be to old to be the son of Thomas and Mary. This is speculation
+on my part that he is most likely part of the English Tapps, but again this is speculation.
+</p>
+<p>
+WILLIAM TAPP,  did not exist as a son of Thomas and Mary, nothing was found in the existing
+records to make one believe that a William Tapp did exist. The Tapp family book stated
+that the name William Tapp and William Taptico were interchangable, not so. From 1693, 
+William  I thru William Taptico II, the name was listed in the order books as William
+Taptico or Tapticoe. One entry was found that appeared to  read William Tapp, however
+the entry appeared to have part of the wording torn off. One must keep in mind, that
+these entrys are copies of original records of 400 years ago.
+</p>
+<p>
+MARY TAPP, was not a daughter, but a daughter in-law, again the entry's  to prove this
+will be listed below.
+</ul>
+</li>
+</p>
+First I will discuss John Tapp and the discrepancies listed in the Tapp book. The 
+following is the will of Jane Fullerton:
+</p>
+<p>
+"In the name of God Amen, I JOANE FULLERTON  of ye county of Rappae: in ye yeare
+of or: Lord 1678 being very sick of body but of a sound & perfect memory, God be praised
+for it, doe make this my last Will & Testamt. as followeth; first I bequeath my soule
+into ye hands of ye Almihgty God hoping for remission of all my sinns."
+</p>
+<p>
+Item:	 I bequeath my body to ye Earth to buried in a decent manner.<br>
+Item:	 I give & bequeath as followth: one cow called Pie, unto Elizabeth Meades.<br>
+Item:	 I give & bequeath unto "JOHN TOPP JUNIOR"one cow called Muge.
+Item:	 I give & bequeath one black mare unto Thomas Cunniers.
+Item:	 I give & bequeath all ye rest of my worldly goods estate unto Robert Doewell.
+Item:	 I give & bequeath one gold ring unto Samll. Parry juinor. And this I make to be
+my last Will and Testamt. & all other Will or Wills to be void & no effect. As Witness my hand
+&Seale this 14th of Aprill 1678.<br>
+Signed  & Sealed in ye presence of us.<br>
+Sammll.Parry, Humphrey Perkins....................Joane  (Her Mark)  Fullerton.
+</p>
+<p>
+
+The deposition of Humphrey Perkins & Samll. Perry say that they did see ye above
+nmed Joane Fullerton signe seal & publish ye above mencjoned as her last Will and 
+Testamt. & that she was in perfect silence & memory at ye signing. Sealing &
+publishing thereof to ye best of their judgements<br>
+Samll.Parry<br>
+Hump. Perkins
+</p>
+<p>
+Jurati sunt PARRY et PERKINS  in Cur Con Rappae: 3rd die Juli 1678 et Recordatr.
+xx2th die.
+</p>
+<p>
+There are many questions concerning the information in  The Tapp Family book 
+concerning the will of Jane or Joane Fullerton and what the records reveal. We
+will discuss the Will before we continue with the entry's from the order books.
+</p>
+<p>
+The one question that is the most important is... if this is Johns wife, why did
+she use her maiden name ? This is most unusual. In those days the wife used her
+married name. Based on the Rappahannock County Order Books, John, her husband died 
+sometimes in 1685, Joane or Jane died in 1678, about 7 years before John, so it's not 
+a case of Jonae or Jane marrying again. Another question is the spelling John Topp. 
+It's difficult to read some of the entry's so it may have been John Tapp, but not positive. 
+Jane or Joane , in her will left all the rest of her wordly goods to a Robert Doewell,
+why ? It would be more logical to leave this to her husband John. So based on the sequence
+of events and the will, I believe that Jane or Joane Fullerton did not have a connection 
+with John.It's my opinion that the Tapp Family book decided to fill in a slot. 
+Disregarding my opinion, evidence points to a conclusion that sufficient evidence is not
+available to state that Jane or Joane Fullerton was Johns wife.
+</p>
+<p>
+The following entry's are from the Rappahannock County Order Books. And should prove
+that Mary is  Johns wife , not a daughter of Thomas and Mary.
+</p>
+<p>
+August 5, 1685:<br>
+A commission of Administration is granted to MARY TAPP upon the estate of her deced
+husband, JOHN TAPP, she giving security to be accountable for the same to this Court
+or to whom it shall more properly belong.
+</p>
+<p>
+The estate of JOHN TAPP deced and that they make report thereof under their hands at
+the next South side Court held for this County.
+</p>
+<p>
+MARY TAPP, together with Mr. John Waters enter themselves in an assumpsit of ten
+thousand pounds of tobb: and cask for the said MARY TAPPS due administracon of the
+estate of her deced husband comitted to her.
+</p>
+<p>
+November 4th 1685: <br>
+Ordered that MARY TAPP  make her personall appearance at next South side Court held for 
+this County & that then & there, she give an exact & true account oath of her deced
+husbands estate.
+</p>
+<p>
+1686:
+Whereas by evidence it appears to this Court that ELIZABETH TAPP, daughter of John Tapp
+deced, an infant, was by her Mother-in-law, MARY TAP, neglected & not taken care of,
+the Court have ordered that upon this Peticon HENRY PICKETT of this County do take the
+sd orphan under  his care & charge  & that she remaine with him untill she come to the age 
+of sixteen or day of marriage wch should first happen.
+</p>
+<b>MY NOTES: In those days, Mother-In-Law and Step Mother meant the same. Taken in the 
+context of the entry and the many other entry's we can assume that this meant Step Mother.
+Therefore Elizabeth is the daughter of JOHN'S previous wife, but certainly not Jane or
+Joane Fullerton. We will continue with the entry's concerning MARY TAPP & JOHN TAPP.
+</p>
+<p>
+August 4th, 1686:<br>
+Reference granted between XPIAN PETERSON, plaintiff & MARY TAP, Admisistrix of her
+deced husband JNO. TAP, Defendant, till next Court.
+</p>
+<p>
+February 1687:<br>
+It is ordered that THO. GAINES take into his custody the sowes & hogs belonging to
+JOHN TAPP render an account thereof to the next Court held for this County.
+</p>
+<p>
+October 6th 1687:
+Ordered that JOHN WATERS sometimes between this & the next Court, inventory & appraise
+the estate of JOHN TAP, late deced & make a report thereof in his hand in writing,
+ to the next Court for this County.
+ </p>
+ <p>
+ September, 1689:<br>
+ Reff. granted intr. XPIAN PETERSON, Plaintiff & JOSEPH BRAGG as marrying MARY TAP,
+ Defendant, till next Court.
+ </p>
+ <p>
+ December 5th, 1689:<br>
+ The Reff. Intr. XPIAN PETERSON, Plaintiff & JOSEPH BRAG as marrying MARY TAP, 
+ Defendant, is continued till next Court.
+ </p>
+ <p>
+ 
+ Unfortunately this is the last entry that I have found concerning Mary Tap, 
+ however it's possible that John Tapp may have married a Joan Fullerton, she died
+ and he married Mary ( maiden unknown, may be Waters). His daughter , that was being 
+ mistreated by his second wife Mary, could have been from his first wife, Joan
+ Fullerton.
+ 
+ However the question of Joan using her maiden name in her will is questionable 
+ and the name  Topp, not Tapp needs to be explained. What has been cleared up 
+ is the question of Mary being listed as a daughter...we now know that she was 
+ a sister-in-law, not a daughter. The Liles Fulcher Tapp book has Mary listed as
+ a daughter that married a Bragg.
+ 
+ The second son, Henry cannot be located.
+ 
+ Thomas and Mary Lewis Tapp mayhave had a son named William Tapp, however he is 
+ not the father of King William Taptico. Keep in mind the Native American Tapps
+ did not come into being until 1719, when King William Taptico died his wife changed
+ the name to Tapp.
+ 
+ Based on the above evidence, it appears the Tapps listed in the Liles Fulcher Tapp 
+ are the English Tapps. If this is correct, it raises several questions, did John
+ Tap leave any male heirs ? Did Henry leave any male heirs ? An interesting bit of
+ information is that the given name of Henry is only found in the Vincent Tapp family
+ of Augusta County VA...this family is thought to be English, could there be a connection.
+ [For those of you that read my genforum posting, this is the method that I detest,
+ connecting families by given names, so tear into me  :o) ]<br>
+ </p>
+ <p>
+ 
+ The big puzzle is William Tapp, did Thomas and Mary Lewis really have a son by the
+ name of William or did the authors of the Tapp Family Book find it convenient to list 
+ him in this family group. ( Remember, the Tapp Family Book stated that Tapp and
+ Taptico were interchangeable, which is incorrect.) The first time that a William
+ Tapp was mentioned (other than in the Tapp Book) was as a sibling of Charity and 
+ Vincent in 1724. In the Northumberland Order Books there was one listing of a William
+ Tapp ( about 1690s), but it was so badly distorted it could possibly have been William
+ Taptico and it did reference a previous entry of William Taptico.
+ </p>
+ <p>
+ With so littles information available on John and Henry, it will be difficult to 
+ trace this group to the Augusta family.
+ </p>
+ <p>
+ THE next group of Tapp's that appear to be English are those that are from Augusta 
+ County Virginia. In most Tapp family tree's they have this family as descendants
+ of King William Taptico.
+ </p>
+ <p>
+ The information below is from a letter that is copyrighted and I can not 
+ place it on line, however I do have permission to publish it in my book " THE LAST OF THE WICOCOMICO"
+ </p>
+ <p>
+ We will begin with the second son of King William Taptico and Elizabeth...Vincent 
+ (sibling of William and Charity) supposedly married Elizabeth Bourne, the problem is; this
+ union is not proven and the Bourne family history can not verify that the marriage took place.
+ </p>
+ <p>
+ Vincent's children were identified in a letter written by Alice Graham dated October 11, 1811
+ from Rockingham County Virginia. ( Alice is the  daughter of William Tapp who married
+ Christian Bourne)She was responding to  a letter she received from Vincent Tapp of Augusta
+ County Virginia. Vincent was attempting to determine if they were related. I cannot reveal 
+ any further information without breaking copyright laws.
+ </p>
+ <p>
+ 
+ Vincent Tapp married Elizabeth Bourne  ( not proven)
+ </p>
+ <p>
+ CHILDREN: <br>
+ *William Tapp: Information below.
+ </p>
+ <p>
+ Vincent Tapp: Statistics Unknown.
+ </p/
+ ><p>
+ John Tapp: Stats Unknown.
+ </p>
+ <p>
+ Elizabeth Tapp: Stats Unknown.
+ </p>
+ <p>
+ Mary Tapp: Stats Unknown
+ </p>
+ <p>
+ Ann Tapp: Stats Unknown
+ </p>
+ <p>
+ Sarah Tapp: Stats Unknown
+ </p>
+ <p>
+ Lettiey Tapp: Stats Unknown
+ </p>
+ <p>
+ *WILLIAM TAPP married Ann ?
+ </p>
+ <p>
+ CHILDREN:
+ </p>
+ <p>
+ *Vincent, John, Samuel, Lewis, Isaac, Betty, Ginny. These names were identified
+ from the same source, and will be in the book.
+ </p>
+ <p>
+ *Vincent married Susannah Gambill and is well documented.
+ </p>
+ <p>
+ CHILDREN:
+ </p>
+ <p>
+ Baylis, Fanny D. , Delphia, Charlotte, Susannah, John, HENRY, Vincent, Nancy,
+ Walter, and Vincent L.
+ </p>
+ <p>
+ This is the family group mentioned previously that named one their children Henry.
+ </p>
+ <p>
+ The following is Vincent Tapp's estate inventory and appears to be Williams father,
+ Vincent. ( The one that supposedly married Elizabeth Bourne).
+ </p>
+ <p>
+ FREDERICK COUNTY VIRGINIA.
+ </p>
+ <p>
+ In obedience to an order of the said County Court bearing date the 2nd of June 1752,
+ we the subscribers being appointed by the said order to value the estate of Vincent
+ Tapp, deced and being sworn before Marquire Batmen  gent} have a valued the same as follows.
+ </p>
+ <p>
+ To an old Horse, Saddle & Bridle........................................Pounds...10
+ </p>
+ <p>
+ To a prcill(?) Old fowleer 13/aprcill(?) Woodenware.....................Pounds....3
+ </p>
+ <p>
+ To Beds & furniture...........................................................3...10
+ </p>
+ <p>
+ To 1 cow & yearling.....................................................Pounds....10
+ </p>
+ <p>
+ To Cask of Tobacco......................................................Pounds....26
+ </p>
+ <p>
+ 
+ Total.........................................................................9.12.6
+ </p>
+ <p>
+ John Ashby
+ </p>
+ <p>
+ William Wood
+ </p>
+ <p>
+ Joseph Combs<br>
+<p>
+ At Court held for Frederick County the 4th day of August, 1752.
+ </p>
+ <p>
+ William Tapp is having returned into Court the appraisement of the estate of Vincent
+ Tapp, Deced the same is admitted to record
+ </p>
+ <p>
+ Teste.  T.Wood CC.
+ </p>
+ <p>
+ Now the problems...the William that married Ann, (son of Vincent and Elizabeth
+ Bourne) is documented in Vincent and Susannah Tapp's family bible, I have copies
+ of the bible...it states the following;
+ </p>
+ <p>
+ "Vincent Tapp, son of William and Ann his wife, was born in Frederick County, the 2nd
+ day of April, 1757. Vincent married Susannah Gambill in Charlottesville in the County
+ of Albermarle, State of Virginia on the 24th day of June 1782".
+ </p>
+ <p>
+ If William is the son of Vincent and Elizabeth Bourne as stated in Alice Grahams
+ letter( Alice's letter did not mention Vincents wife, this is an assumption based on
+ the Liles Fulcher Tapp Book) and the father of Vincent (who married Susannah) as stated
+ in Vincents bible, then the Augusta County Tapp family are descendants of King William
+ Taptico !  However this contradicts recent information that was placed on  a personal web site
+ stating that  a descendent of the Fredrick County Tapps had a DNA test and indicated that
+ this family is of European origin. If this is the case, it's important that the
+ DNA tester be absolutely sure that he is from this line. If his research is primarly from
+ the Liles Fulcher Tapp book then there may  be a problem. 
+ </p>
+ <p>
+ What is possible, is that Alice's letter is correct, but the William that married
+ Ann is not the same William she discussed in her letter.
+ </p>
+ <p>
+ October, 2004.
+ </p>
+ <p>
+ Before I continue with my thoughts on the English Tapps, I need to mention the
+ supposedly French Tapps that arrived in Virginia in 1724 and settled in Westmoreland
+ County VA.
+ </p>
+ <p>
+ The following is from the Liles Fulcher Tapp Book.
+ </p>
+ <p>
+ Phillip Lewis Joseph Tapp (1690) was the "founder" of this Tapp Family in the Colony 
+ of Virginia. Born in Montauban, France, he arrived in Virginia in 1724, settling in 
+ Westmoreland County. He evidently brought his then children with him, as records show 
+ some of them born in Montauban, France.
+ </p>
+ >p>
+ The book states that Phillip Lewis Jopseph Tapp married Louise Desplain, their
+ childeran are;
+ </p>
+ <p>
+ Phillip Lewis Joseph Tapp Jr  b. in Mountauban France. Married Fauntleroy.
+ </p>
+ <p>
+ Anna Maria Tapp  3/20/1716  b. in Mountaban France. Married William Bledsoe.
+ </p>
+ <p>
+ Frederick William Tapp  b. 1720, Orange County Virginia.Married Rachel Mountjoy.
+ </p>
+ <p>
+ MY NOTES: The Liles Fulcher Tapp is very inaccurate, but they had to find these names 
+ somewhere. I will be contacting a researcher in Westmoreland and see if this family existed,
+ also I will contact the French Embassy and find the address of the archives in Paris.
+ Until we find this familes place in the overall Tapp genealogy, we will be spinning our
+ wheels and continue misplacing the Tapps in the wrong ethnic group.</p>
+ <p>
+ I had a researcher check out this family several months ago, he did find some of 
+ the names listed as descendants but did not find the conncection, also the Tapp Book
+ mentions  a Fielding Lewis Tapp (grandson of of Phillip  Lewis Joseph  Tapp)
+ as marrying a Mildred Chowning. ( Some folks have stated that Chowning and Chewning is the
+ one and same ! WRONG. Chewinig is documented and I have the lineage of Lewis and Mildred Chowning. 
+ By the way, Fielding is not Lewis's first name, it appears someone added Fielding to give readers 
+ the impression that he may be related to, Fielding Lewis, ancestor/descendant of George Washington 
+ and his family.
+ </p>
+ <p>
+ MORE TO FOLLOW.
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+<hr align="center" width="450">
+</p></b></h3>
+ <SCRIPT LANGUAGE="JAVASCRIPT">
+ <!--Hide from old Browsers
+ document.bgColor="red"
+ document.bgColor="lime"
+ document.bgColor="tan"
+ 
+ 
+ var tNow = new Date()
+ var tlocDate = tNow.toLocaleString()
+ var tDate = tlocDate.substring(0,10)
+ 
+ 
+ var intro1 = "CHAMAH,thanks for visiting our web site,this page is under "
+ 
+ var intro2 = "construction and will consist of our Taptico and Tapp lineage." 
+ 
+ var introMsg = intro1+intro2
+ 
+ document.write("<H4><FONT Color='993300'>"+introMsg+"</H4></FONT>")
+ document.write("<BR><H4><CENTER>This document was last modified "+document.
+ lastModified+"</CENTER></H4>")
+ setTimeout("alert('Site Under Construction')",1000)
+ 
+ //-->
+ </script>
+
+</body>
+</html>
+
+
+
+
+
+<!--
+     FILE ARCHIVED ON 4:46:45 Jul 18, 2011 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 17:05:13 Feb 19, 2012.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
